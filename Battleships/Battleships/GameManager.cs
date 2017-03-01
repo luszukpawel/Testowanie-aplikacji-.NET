@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
-    enum ShipType { Carrier, Battleship, Destroyer, Submarine, PatrolBoat };
-
-
+    class GameManager
+    {
+        Player Player1 = new Player();
+        Player Player2 = new Player();
+    }
 }
