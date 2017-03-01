@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
-    class Player
+   public class Player
     {
         public string PlayerNick;
         protected void Fire(int row, int col, Player player)
@@ -37,7 +37,8 @@ namespace Battleships
             return true;
         }
 
-        private void PlaceShips()
+        
+        public void PlaceShips()
         {
            
         }

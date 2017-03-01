@@ -6,9 +6,24 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
-    class GameManager
+    public class GameManager
     {
-        Player Player1 = new Player();
-        Player Player2 = new Player();
+        public Player Player1 = new Player();
+        public Player Player2 = new Player();
+
+        void PrepareGameScene()
+        {
+           
+        }
+
+        void SetPlayersName()
+        {
+           
+        }
+
+        public void Play()
+        {
+
+        }
     }
 }

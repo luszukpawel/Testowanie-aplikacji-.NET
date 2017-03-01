@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
-    class Ship
+    public class Ship
     {
         private int _health;
         private readonly ShipType _type;
