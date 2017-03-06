@@ -11,10 +11,23 @@ namespace Battleships.Tests
     [TestClass()]
     public class GameManagerTests
     {
-        [TestMethod()]
-        public void PlayTest()
+        private TestContext testContextInstance;
+        public TestContext TestContext
         {
-            Assert.Fail();
+            get { return testContextInstance; }
+            set { testContextInstance = value; }
         }
+
+
+
+        public void FakesTest()
+        {
+            
+        }
+
+
     }
+
+
 }
+

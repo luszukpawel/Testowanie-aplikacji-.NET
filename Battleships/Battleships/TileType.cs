@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
-        enum TileType { Unknown, Water, Undamaged, Damaged, Sunk }   
+       public enum TileType { Unknown, Water, Undamaged, Damaged, Sunk }   
 }

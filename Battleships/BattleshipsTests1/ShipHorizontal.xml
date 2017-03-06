@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShipHorizontal>
+  <Ship>
+    <index>1</index>
+    <Type>PatrolBoat</Type>
+    <x>5</x>
+    <y>5</y>
+  </Ship>
+  <Ship>
+    <index>2</index>
+    <Type>Submarine</Type>
+    <x>2</x>
+    <y>2</y>
+  </Ship>
+  <Ship>
+    <index>3</index>
+    <Type>PatrolBoat</Type>
+    <x>7</x>
+    <y>7</y>
+  </Ship>
+  <Ship>
+    <index>4</index>
+    <Type>Submarine</Type>
+    <x>4</x>
+    <y>4</y>
+  </Ship>
+</ShipHorizontal>

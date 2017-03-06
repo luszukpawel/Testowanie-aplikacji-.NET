@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
-    enum ShipType { Carrier, Battleship, Destroyer, Submarine, PatrolBoat };
+    public enum ShipType { Carrier, Battleship, Destroyer, Submarine, PatrolBoat };
 
 
 }

@@ -8,37 +8,31 @@ namespace Battleships
 {
     public class Ship
     {
-        private int _health;
-        private readonly ShipType _type;
+        public int _health;
+        public int index;
+        public readonly ShipType _type;
 
-        private static readonly Dictionary<ShipType, int> shipLengths = new Dictionary<ShipType, int>()
-   {
-            {ShipType.Carrier, 5},
-            {ShipType.Battleship, 4},
-            {ShipType.Destroyer, 3},
-            {ShipType.Submarine, 3},
-            {ShipType.PatrolBoat, 2}
-};
 
         public Ship(ShipType type)
         {
             _type = type;
-            _health = shipLengths[_type];
+            Deploy();
         }
 
         public void Deploy()
         {
-            
+            _health = GameSettings.shipLengths[_type];
         }
 
         public bool IsSunk()
         {
-            return true;
+                return _health == 0 ? true : false;         
         }
 
         public bool Hit()
         {
-            return true;
+            _health--;
+            return IsSunk();
         }
     }
 }

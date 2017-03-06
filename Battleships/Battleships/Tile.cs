@@ -10,6 +10,21 @@ namespace Battleships
     {
         public int x { get; private set; }
         public int y { get; private set; }
-        
+        public int ShipIndex { get; set; }
+
+        public TileType Type;
+
+        public Tile(int _x, int _y)
+        {
+            x = _x;
+            y = _y;
+        }
+
+        public void Reset(Tile type)
+        {
+            ShipIndex = -1;
+        }
+
+
     }
 }
