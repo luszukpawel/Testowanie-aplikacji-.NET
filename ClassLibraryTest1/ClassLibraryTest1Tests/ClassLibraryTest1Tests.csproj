@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0183BB6-C0F6-4154-A6B5-584EDB3D8B4E}</ProjectGuid>
+    <ProjectGuid>{F7FF9E28-1FB2-4F60-B19C-9F5AF9ECEDEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BattleshipsTests1</RootNamespace>
-    <AssemblyName>BattleshipsTests1</AssemblyName>
+    <RootNamespace>ClassLibraryTest1Tests</RootNamespace>
+    <AssemblyName>ClassLibraryTest1Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,18 +36,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Battleships.Fakes">
-      <HintPath>FakesAssemblies\Battleships.Fakes.dll</HintPath>
+    <Reference Include="ClassLibraryTest1.Fakes">
+      <HintPath>FakesAssemblies\ClassLibraryTest1.Fakes.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -62,28 +57,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="GameManagerTests.cs" />
-    <Compile Include="PlayerTests.cs" />
+    <Compile Include="Class1Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShipTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Battleships\Battleships.csproj">
-      <Project>{D20C17BB-2F15-41E1-B995-4E96221C0CAA}</Project>
-      <Name>Battleships</Name>
+    <ProjectReference Include="..\ClassLibraryTest1\ClassLibraryTest1.csproj">
+      <Project>{B0AE08A6-8004-47ED-B197-5B7501CF8C0F}</Project>
+      <Name>ClassLibraryTest1</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ShipHorizontal.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Fakes Include="Fakes\Battleships.fakes" />
-    <None Include="packages.config" />
+    <Fakes Include="Fakes\ClassLibraryTest1.fakes" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

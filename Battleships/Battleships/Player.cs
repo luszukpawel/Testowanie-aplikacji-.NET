@@ -9,13 +9,14 @@ namespace Battleships
     public class Player : IPlayer
     {
         public string PlayerNick;
-        public bool Fire(int x, int y, Player playerToAttack)
+        public Player PlayerToAttack;
+        public bool Fire(int x, int y)
         {
             if (x <= GameSettings.GRID_SIZE && y <= GameSettings.GRID_SIZE)
             {
-                if (playerToAttack.MyGrid[x, y].Type == TileType.Undamaged)
+                if (PlayerToAttack.MyGrid[x, y].Type == TileType.Undamaged)
                 {
-                    playerToAttack.MyGrid[x, y].Type = TileType.Damaged;
+                    PlayerToAttack.MyGrid[x, y].Type = TileType.Damaged;
                     return true;
                 }
             }
@@ -50,10 +51,24 @@ namespace Battleships
 
         }
 
-        public void SetNickname(string _nick)
+        public bool ValidateNickName(string _nick)
         {
-            if (_nick.Length > 2)
+            if (_nick.Length > 2) return true;
+            return false;
+        }
+
+        public bool SetNickName(string _nick)
+        {
+            if (ValidateNickName(_nick))
+            {
                 PlayerNick = _nick;
+                return true;
+            }
+            else
+            {
+               // throw new ArgumentException("Invalid Nickname");
+                return false;
+            }
         }
 
         //set all player tiles to water
@@ -172,11 +187,11 @@ namespace Battleships
                 {
                     if (MyGrid[i, j].ShipIndex == index)
                     {
-                        MyGrid[i,j].Type = TileType.Sunk;
-                     }
+                        MyGrid[i, j].Type = TileType.Sunk;
+                    }
                 }
             }
-            for (int i = _myShips.Count-1; i >= 0; i--)
+            for (int i = _myShips.Count - 1; i >= 0; i--)
             {
                 if (_myShips[i].index == index)
                 {

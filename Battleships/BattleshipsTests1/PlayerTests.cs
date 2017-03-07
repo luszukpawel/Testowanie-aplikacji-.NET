@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Battleships.Fakes;
 
 
 namespace Battleships.Tests
@@ -98,37 +99,68 @@ namespace Battleships.Tests
 
         // StringAssert Class example
         [TestMethod()]
-        public void SetNicknameTest()
+        public void SetNickname_ThrowExeptionWhenPlayerNotValid_Test()
         {
             Player player = new Player();
-            player.SetNickname("test");
-            player.SetNickname("xd");
-            StringAssert.StartsWith(player.PlayerNick, "test");
+
+            string nonvalidnick = "xd";
+
+            try
+            {
+                player.SetNickName(nonvalidnick);
+                Assert.Fail("ArgumentExeption expected");
+            }
+            catch (Exception e)
+            {
+                Assert.IsTrue(e is ArgumentException);
+            }
+        }
+
+        [TestMethod()]
+        public void SetNickname_ThrowExeptionWhenPlayerIsValid_Test()
+        {
+            IPlayer stubPlayer = new StubIPlayer()
+            {
+                ValidateNickNameString = (x) => { return true; }
+            };
+            string nonvalidnick = "xd";
+
+            var result = stubPlayer.SetNickName(nonvalidnick);
+            Assert.IsTrue(result);
         }
 
         [TestMethod()]
         public void FireTest()
         {
+
             Player player = new Player();
             Ship ship = new Ship(ShipType.PatrolBoat);
             ship.index = 1;
             Tile tile = new Tile(5, 5);
             player._myShips.Add(ship);
             player.MyGrid[5, 5].Type = TileType.Undamaged;
-            Boolean resiult = player.Fire(5, 5, player);
+            Boolean resiult = player.Fire(5, 5);
             Assert.IsTrue(resiult);
+
+
         }
 
         [TestMethod()]
         public void isLostTest()
         {
+            bool wasSinkshipCalled = false;
+            IPlayer stubplayer = new StubIPlayer()
+            {
+                SinkShipInt32 = (x) => { wasSinkshipCalled = true; }
+            };
             Player player = new Player();
             Ship ship = new Ship(ShipType.PatrolBoat);
             ship.index = 1;
             player._myShips.Add(ship);
             player.SinkShip(ship.index);
             var result = player.isLost();
-            Assert.IsTrue(result);
+            Assert.IsTrue(wasSinkshipCalled);
+
         }
 
 
@@ -145,7 +177,17 @@ namespace Battleships.Tests
             int actual = us.currentSWVersion(1);
             Assert.AreEqual(expected, actual, "Same Versions found
             */
-           
+
+        }
+
+        [TestMethod()]
+        public void SetNickNameTest()
+        {
+            IPlayer stubPlayer = new StubIPlayer()
+            {
+
+            };
+
         }
     }
 }
