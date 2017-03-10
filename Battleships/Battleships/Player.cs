@@ -9,14 +9,14 @@ namespace Battleships
     public class Player : IPlayer
     {
         public string PlayerNick;
-        public Player PlayerToAttack;
-        public bool Fire(int x, int y)
+ 
+        public bool Fire(int x, int y, Player playerToAttack)
         {
             if (x <= GameSettings.GRID_SIZE && y <= GameSettings.GRID_SIZE)
             {
-                if (PlayerToAttack.MyGrid[x, y].Type == TileType.Undamaged)
+                if (playerToAttack.MyGrid[x, y].Type == TileType.Undamaged)
                 {
-                    PlayerToAttack.MyGrid[x, y].Type = TileType.Damaged;
+                    playerToAttack.MyGrid[x, y].Type = TileType.Damaged;
                     return true;
                 }
             }
@@ -39,6 +39,18 @@ namespace Battleships
         public List<Ship> _enemyShips = new List<Ship>();
 
         public Player()
+        {
+            MyGridInit();
+            EnemyGridInit();
+
+            foreach (ShipType type in Enum.GetValues(typeof(ShipType)))
+            {
+                _myShips.Add(new Ship(type));
+                _enemyShips.Add(new Ship(type));
+            }
+
+        }
+        public Player(IPlayer player)
         {
             MyGridInit();
             EnemyGridInit();

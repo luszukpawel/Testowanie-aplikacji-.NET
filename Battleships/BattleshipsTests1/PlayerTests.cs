@@ -97,36 +97,33 @@ namespace Battleships.Tests
             Assert.AreEqual(player.EnemyGrid[5, 5].Type, TileType.Unknown);
         }
 
-        // StringAssert Class example
+      
         [TestMethod()]
-        public void SetNickname_ThrowExeptionWhenPlayerNotValid_Test()
+        public void ValidateNickNameTest()
         {
-            Player player = new Player();
-
-            string nonvalidnick = "xd";
-
-            try
-            {
-                player.SetNickName(nonvalidnick);
-                Assert.Fail("ArgumentExeption expected");
-            }
-            catch (Exception e)
-            {
-                Assert.IsTrue(e is ArgumentException);
-            }
-        }
-
-        [TestMethod()]
-        public void SetNickname_ThrowExeptionWhenPlayerIsValid_Test()
-        {
+            bool wasValidationCalled = false;
             IPlayer stubPlayer = new StubIPlayer()
             {
-                ValidateNickNameString = (x) => { return true; }
+                ValidateNickNameString = (x) =>
+                {
+                    wasValidationCalled = true;
+                    return true;
+                }
             };
             string nonvalidnick = "xd";
-
-            var result = stubPlayer.SetNickName(nonvalidnick);
-            Assert.IsTrue(result);
+            var result = stubPlayer.ValidateNickName(nonvalidnick);
+            Assert.IsTrue(wasValidationCalled);
+        }
+        // StringAssert Class example
+        [TestMethod()]
+        public void SetNicknameTest()
+        {
+                Player player = new Player();
+            string nonvalidnick = "xd";
+            string validnick = "validnick";
+            player.SetNickName(validnick);
+            player.SetNickName(nonvalidnick);
+            StringAssert.StartsWith("validnick", player.PlayerNick);
         }
 
         [TestMethod()]
@@ -139,7 +136,7 @@ namespace Battleships.Tests
             Tile tile = new Tile(5, 5);
             player._myShips.Add(ship);
             player.MyGrid[5, 5].Type = TileType.Undamaged;
-            Boolean resiult = player.Fire(5, 5);
+            Boolean resiult = player.Fire(5, 5, player);
             Assert.IsTrue(resiult);
 
 
@@ -148,18 +145,13 @@ namespace Battleships.Tests
         [TestMethod()]
         public void isLostTest()
         {
-            bool wasSinkshipCalled = false;
-            IPlayer stubplayer = new StubIPlayer()
-            {
-                SinkShipInt32 = (x) => { wasSinkshipCalled = true; }
-            };
             Player player = new Player();
             Ship ship = new Ship(ShipType.PatrolBoat);
             ship.index = 1;
             player._myShips.Add(ship);
             player.SinkShip(ship.index);
             var result = player.isLost();
-            Assert.IsTrue(wasSinkshipCalled);
+            Assert.IsTrue(result);
 
         }
 
@@ -180,14 +172,6 @@ namespace Battleships.Tests
 
         }
 
-        [TestMethod()]
-        public void SetNickNameTest()
-        {
-            IPlayer stubPlayer = new StubIPlayer()
-            {
-
-            };
-
-        }
+        
     }
 }

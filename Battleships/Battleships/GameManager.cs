@@ -14,8 +14,7 @@ namespace Battleships
         public DateTime TimeOFMatchStart;
         void PrepareGameScene()
         {
-            Player1.PlayerToAttack = Player2;
-            Player2.PlayerToAttack = Player1;
+          
         }
 
         public void Play()

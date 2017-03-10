@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="GameManager.cs" />
     <Compile Include="GameSettings.cs" />
+    <Compile Include="IGameSettings.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Ship.cs" />
