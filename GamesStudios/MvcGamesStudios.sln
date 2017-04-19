@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesStudios", "MvcSport\GamesStudios.csproj", "{93CE548B-630D-4225-B287-0534EA622AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesStudiosTest", "MvcTest\GamesStudiosTest.csproj", "{EBF8D7E7-A54C-43AA-85C6-3FC9841A88F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedUITests", "CodedUITests\CodedUITests.csproj", "{407A6FC1-2E72-4028-B142-4E6236799941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93CE548B-630D-4225-B287-0534EA622AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CE548B-630D-4225-B287-0534EA622AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CE548B-630D-4225-B287-0534EA622AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CE548B-630D-4225-B287-0534EA622AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF8D7E7-A54C-43AA-85C6-3FC9841A88F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF8D7E7-A54C-43AA-85C6-3FC9841A88F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF8D7E7-A54C-43AA-85C6-3FC9841A88F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF8D7E7-A54C-43AA-85C6-3FC9841A88F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407A6FC1-2E72-4028-B142-4E6236799941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407A6FC1-2E72-4028-B142-4E6236799941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407A6FC1-2E72-4028-B142-4E6236799941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407A6FC1-2E72-4028-B142-4E6236799941}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

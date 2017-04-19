@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Paweł Luszuk Project</h1>
+    <p class="lead">It's the .NET project by Paweł Luszuk</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Genre's Database</h2>
+        <p>
+            You can go to the Genre's database to check for football Genres there and maybe add something new!
+        </p>
+        @Html.ActionLink("Go to Genre's Database", "Index", "Genre", new { area = "" }, new { @class = "navbar-brand" })
+    </div>
+        <div class="col-md-4">
+            <h2>Game's Database</h2>
+            <p>
+                You can go to the Game's database to check for your favourite football Games!
+            </p>
+            @Html.ActionLink("Go to Game's Database", "Index", "Game", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+    <div class="col-md-4">
+        <h2>Contact with me!</h2>
+        <p>You can always find me. Where? Take a look at "Contact" page</p>
+        @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    </div>
+</div>

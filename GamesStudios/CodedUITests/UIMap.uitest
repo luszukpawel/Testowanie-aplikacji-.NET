@@ -1,0 +1,1149 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="7cf5b853-ca65-463c-a087-9d99baa81acc" AssemblyVersion="14.0.23107.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.14393.0" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="yes" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="70912" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Microsoft Windows 10 Education" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 10.0.14393.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="False" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="False" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1045" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1045" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1920" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="1080" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="120" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="120" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="1" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="5" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers">
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="UIA" WarningLevel="1" />
+    </Group>
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions>
+    <NavigateToUrlAction>
+      <ParameterName />
+      <Url>http://go.microsoft.com/fwlink/p/?LinkId=255141</Url>
+      <NewInstance>true</NewInstance>
+    </NavigateToUrlAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="OpenInternetExplorer">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UINowakartaMozillaFireApplication">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="889" Y="53" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox">
+      <ParameterName />
+      <Value Encoded="false">http://localhost:59145/</Value>
+      <Type>String</Type>
+      <PreferEdit>True</PreferEdit>
+    </SetValueAction>
+    <SendKeysAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIItemComboBox.UIWprowadźadreslubszukEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Enter}</Text>
+    </SendKeysAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="OpenApp">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIMSNPolskaOutlookSkypWindow.UIErrorPageDocument.UIListaosóbButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="21" Y="6" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="ListaOsobClick">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIAllMyASPNETApplicatiWindow.UIAllMyASPNETApplicatiDocument.UISprawdźadresButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="30" Y="16" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="SprAdresClick">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIMyASPNETApplicationIWindow.UIMyASPNETApplicationDocument.UIEdytujButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="62" Y="26" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="ClickEditAdres">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <SetValueAction UIObjectName="UIMap.UIMyASPNETApplicationIWindow.UIMyASPNETApplicationDocument1.UIMiastoEdit">
+      <ParameterName />
+      <Value Encoded="false">Gdansk</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="EditMiastoPerson">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIMyASPNETApplicationIWindow.UIMyASPNETApplicationDocument1.UIZapiszButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="55" Y="34" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="SaveAdresPersonClick">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <LaunchApplicationAction UIObjectName="UIMap.UIUseUIAutomationToTesWindow">
+      <ParameterName />
+      <FileName>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</FileName>
+      <AlternateFileName>%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe</AlternateFileName>
+    </LaunchApplicationAction>
+    <MouseAction UIObjectName="UIMap.UIUseUIAutomationToTesWindow.UIUseUIAutomationToTesApplication.UIItemButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="25" Y="22" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="OpenFirefox">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <LaunchApplicationAction>
+      <ParameterName />
+      <FileName>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</FileName>
+      <AlternateFileName>%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe</AlternateFileName>
+    </LaunchApplicationAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIItemComboBox.UIWprowadźadreslubszukEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="603" Y="10" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SendKeysAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIItemComboBox.UIWprowadźadreslubszukEdit">
+      <ParameterName />
+      <ModifierKeys>Control</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">v</Text>
+    </SendKeysAction>
+    <SendKeysAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIItemComboBox.UIWprowadźadreslubszukEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Enter}</Text>
+    </SendKeysAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="OpenFirefoxandGotoPage">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIItemPropertyPage.UIHomePageGamesStudiosDocument">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="941" Y="33" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateNewHyperlink.UICreateNewEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="47" Y="5" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UITitleEdit">
+      <ParameterName />
+      <Value Encoded="false">CodedUITest</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UIGenreComboBox">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="327" Y="25" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIItemWindow.UIGenreComboBox">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="234" Y="59" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UICreateButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="50" Y="27" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="GoToGamesAndCreateNew">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <LaunchApplicationAction>
+      <ParameterName />
+      <FileName>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</FileName>
+      <AlternateFileName>%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe</AlternateFileName>
+    </LaunchApplicationAction>
+    <SetValueAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox">
+      <ParameterName />
+      <Value Encoded="false">localhost:59145</Value>
+      <Type>String</Type>
+      <PreferEdit>True</PreferEdit>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIHomePageGamesStudiosMoziApplication.UIItemList">
+      <ParameterName />
+      <Value Encoded="false" />
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIItemComboBox.UIWprowadźadreslubszukEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="375" Y="11" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>DoubleClick</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIPawełLuszukProjectHyperlink.UIPawełLuszukProjectEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="124" Y="14" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="OpenFirefoxandGotoMainPage">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UIGamesDatabaseHyperlink.UIGamesDatabaseEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="28" Y="5" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateNewHyperlink.UICreateNewEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="35" Y="6" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UITitleEdit">
+      <ParameterName />
+      <Value Encoded="false">Coded</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SendKeysAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UITitleEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Down}</Text>
+    </SendKeysAction>
+    <SendKeysAction UIObjectName="UIMap.UIItemWindow1.UIItemList.UICodedUITestCodedUITeListItem">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Enter}</Text>
+    </SendKeysAction>
+    <SetValueAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UITitleEdit">
+      <ParameterName />
+      <Value Encoded="false">CodedUITest1</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SendKeysAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UITitleEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Tab}</Text>
+    </SendKeysAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UIGenreComboBox">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="331" Y="17" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIItemWindow.UIGenreComboBox">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="275" Y="99" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UINowakartaMozillaFireWindow.UICreateGamesStudiosDocument.UICreateButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="29" Y="16" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="AddNewGame">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+  </ExecuteActions>
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="UIMap">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="UIMSNPolskaOutlookSkypWindow" FriendlyName="MSN Polska - Outlook, Skype, Hotmail, Messenger, M..." SpecialControlType="BrowserWindow" SessionId="460860">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDrive</WindowTitle>
+            <WindowTitle>ErrorPage</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDrive</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="ToolBar" Id="UIKontrolkakombiadresuToolBar" FriendlyName="Kontrolka kombi adresu" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDrive</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Kontrolka kombi adresu</PropertyCondition>
+                <PropertyCondition Name="ControlType">ToolBar</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="MenuItem" Id="UIAdresMenuItem" FriendlyName="Adres" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDrive</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>Expand</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Adres</PropertyCondition>
+                    <PropertyCondition Name="ControlType">MenuItem</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIErrorPageDocument" FriendlyName="ErrorPage" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>ErrorPage</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">ErrorPage</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://localhost:9098/</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIListaosóbButton" FriendlyName="Lista osób" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>ErrorPage</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">BUTTON</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Lista osób</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" onclick="locatio</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIAllMyASPNETApplicatiWindow" FriendlyName="All - My ASP.NET Application - Internet Explorer" SpecialControlType="BrowserWindow" SessionId="460860">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>All - My ASP.NET Application</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">All - My ASP.NET Application</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIAllMyASPNETApplicatiDocument" FriendlyName="All - My ASP.NET Application" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>All - My ASP.NET Application</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">All - My ASP.NET Application</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Person/All</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://localhost:9098/Person/All</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UISprawdźadresButton" FriendlyName="Sprawdź adres" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>All - My ASP.NET Application</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">BUTTON</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name">sprAdres</PropertyCondition>
+                      <PropertyCondition Name="DisplayText">Sprawdź adres</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="sprAdres" class="btn btn-default" </PropertyCondition>
+                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIMyASPNETApplicationIWindow" FriendlyName="- My ASP.NET Application - Internet Explorer" SpecialControlType="BrowserWindow" SessionId="460860">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>- My ASP.NET Application</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">- My ASP.NET Application</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIMyASPNETApplicationDocument" FriendlyName="- My ASP.NET Application" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>- My ASP.NET Application</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">- My ASP.NET Application</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Adres/DisplayById/2</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://localhost:9098/Adres/DisplayById/2</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIEdytujButton" FriendlyName="Edytuj" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>- My ASP.NET Application</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">BUTTON</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Edytuj</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" onclick="locatio</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIMyASPNETApplicationDocument1" FriendlyName="- My ASP.NET Application" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>- My ASP.NET Application</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">- My ASP.NET Application</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Adres/Edit/2</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://localhost:9098/Adres/Edit/2</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIMiastoEdit" FriendlyName="Miasto" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>- My ASP.NET Application</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">miasto</PropertyCondition>
+                      <PropertyCondition Name="Name">miasto</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Miasto</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">name="miasto" id="miasto" type="text" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UIZapiszButton" FriendlyName="Zapisz" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>- My ASP.NET Application</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Zapisz</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIUseUIAutomationToTesWindow" FriendlyName="Use UI Automation To Test Your Code - Mozilla Fire..." SpecialControlType="None" SessionId="66590">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Use UI Automation To Test Your Code - Mozilla Firefox</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Use UI Automation To Test Your Code - Mozilla Firefox</PropertyCondition>
+            <PropertyCondition Name="ClassName">MozillaWindowClass</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Application" Id="UIUseUIAutomationToTesApplication" FriendlyName="Use UI Automation To Test Your Code - Mozilla Fire..." SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Use UI Automation To Test Your Code - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Use UI Automation To Test Your Code - Mozilla Firefox</PropertyCondition>
+                <PropertyCondition Name="ControlType">Application</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIItemButton" FriendlyName="" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Use UI Automation To Test Your Code - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                    <PropertyCondition Name="Instance">2</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UINowakartaMozillaFireWindow" FriendlyName="Nowa karta - Mozilla Firefox" SpecialControlType="None" SessionId="67310">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Nowa karta - Mozilla Firefox</WindowTitle>
+            <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+            <WindowTitle>Index - GamesStudios - Mozilla Firefox</WindowTitle>
+            <WindowTitle>Create - GamesStudios - Mozilla Firefox</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Nowa karta - Mozilla Firefox</PropertyCondition>
+            <PropertyCondition Name="ClassName">MozillaWindowClass</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Application" Id="UINowakartaMozillaFireApplication" FriendlyName="Nowa karta - Mozilla Firefox" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Nowa karta - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Nowa karta - Mozilla Firefox</PropertyCondition>
+                <PropertyCondition Name="ControlType">Application</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants />
+            </UIObject>
+            <UIObject ControlType="ToolBar" Id="UIPaseknarzędzinawigacToolBar" FriendlyName="Pasek narzędzi nawigacyjnych" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Nowa karta - Mozilla Firefox</WindowTitle>
+                <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Pasek narzędzi nawigacyjnych</PropertyCondition>
+                <PropertyCondition Name="ControlType">ToolBar</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ComboBox" Id="UIItemComboBox" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Nowa karta - Mozilla Firefox</WindowTitle>
+                    <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="ComboBox" Id="UIItemComboBox" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Nowa karta - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIWprowadźadreslubszukEdit" FriendlyName="Wprowadź adres lub szukaj" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Nowa karta - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Wprowadź adres lub szukaj</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="PropertyPage" Id="UIItemPropertyPage" FriendlyName="" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="ControlType">PropertyPage</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Document" Id="UIHomePageGamesStudiosDocument" FriendlyName="Home Page - GamesStudios" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Home Page - GamesStudios</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Hyperlink" Id="UICreateNewHyperlink" FriendlyName="Create New" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Index - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Create New</PropertyCondition>
+                <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UICreateNewEdit" FriendlyName="Create New" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Create New</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UICreateGamesStudiosDocument" FriendlyName="Create - GamesStudios" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Create - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Create - GamesStudios</PropertyCondition>
+                <PropertyCondition Name="ControlType">Document</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UITitleEdit" FriendlyName="Title" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Title</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="ComboBox" Id="UIGenreComboBox" FriendlyName="Genre" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Genre</PropertyCondition>
+                    <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UICreateButton" FriendlyName="Create" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Create</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Application" Id="UIHomePageGamesStudiosMoziApplication" FriendlyName="Home Page - GamesStudios - Mozilla Firefox" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Home Page - GamesStudios - Mozilla Firefox</PropertyCondition>
+                <PropertyCondition Name="ControlType">Application</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="List" Id="UIItemList" FriendlyName="" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="ControlType">List</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Hyperlink" Id="UIPawełLuszukProjectHyperlink" FriendlyName="Paweł Luszuk Project" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Index - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Paweł Luszuk Project</PropertyCondition>
+                <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIPawełLuszukProjectEdit" FriendlyName="Paweł Luszuk Project" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Paweł Luszuk Project</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Hyperlink" Id="UIGamesDatabaseHyperlink" FriendlyName="Game's Database" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Game's Database</PropertyCondition>
+                <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIGamesDatabaseEdit" FriendlyName="Game's Database" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Home Page - GamesStudios - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Game's Database</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIItemWindow" FriendlyName="" SpecialControlType="None" SessionId="459740">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles />
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="AccessibleName">Genre</PropertyCondition>
+            <PropertyCondition Name="ClassName">MozillaWindowClass</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="ComboBox" Id="UIGenreComboBox" FriendlyName="Genre" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles />
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Genre</PropertyCondition>
+                <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants />
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIItemWindow1" FriendlyName="" SpecialControlType="None" SessionId="65552">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles />
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="AccessibleName">Desktop</PropertyCondition>
+            <PropertyCondition Name="ClassName">#32769</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="List" Id="UIItemList" FriendlyName="" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Create - GamesStudios - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="ControlType">List</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ListItem" Id="UICodedUITestCodedUITeListItem" FriendlyName="CodedUITest CodedUITest" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles />
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">CodedUITest CodedUITest</PropertyCondition>
+                    <PropertyCondition Name="ControlType">ListItem</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>
