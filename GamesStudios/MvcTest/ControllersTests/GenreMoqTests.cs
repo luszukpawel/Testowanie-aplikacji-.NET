@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GamesStudios.Models;
-using GamesStudios.DAL;
+using GamesStudios.DBContext;
 using Moq;
 using GamesStudios.Controllers;
 using System.Web.Mvc;
@@ -15,7 +15,7 @@ namespace MvcTest.Tests
         public void TestDetailsMoq()
         {
             Genre Genre = new Genre();
-            Genre.ID = 1;
+            Genre.ID = 2;
             Genre.Name = "RPG";
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGenreById(2)).Returns(Genre);
@@ -49,7 +49,7 @@ namespace MvcTest.Tests
         public void TestEditConfirmGenreMoq()
         {
             Genre Genre = new Genre();
-            Genre.ID = 1;
+            Genre.ID = 2;
             Genre.Name = "RPG";
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGenreById(2)).Returns(Genre);
@@ -57,7 +57,6 @@ namespace MvcTest.Tests
             var controller = new GenreController(context.Object);
 
             Genre.Name = "jRPG";
-          //  Genre.doc = new DateTime(1889, 12, 1);
             var result = controller.Edit(Genre) as RedirectToRouteResult;
 
             Assert.AreEqual("Index", result.RouteValues["Action"]);

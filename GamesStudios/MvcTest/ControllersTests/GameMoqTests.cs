@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GamesStudios.Models;
-using GamesStudios.DAL;
+using GamesStudios.DBContext;
 using Moq;
 using GamesStudios.Controllers;
 using System.Web.Mvc;
@@ -14,7 +14,7 @@ namespace MvcTest.Tests
         [TestMethod]
         public void TestDetailsMoq()
         {
-            Game Game = new Game { ID = 1, Name = "The Wish" };
+            Game Game = new Game { ID = 2, Name = "The Wish" };
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGameById(2)).Returns(Game);
             var controller = new GameController(context.Object);
@@ -29,7 +29,7 @@ namespace MvcTest.Tests
         [TestMethod]
         public void TestEditGenreMoq()
         {
-            Game Game = new Game { ID = 1, Name = "RPG" };
+            Game Game = new Game { ID = 2, Name = "RPG" };
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGameById(2)).Returns(Game);
             var controller = new GameController(context.Object);
@@ -44,7 +44,7 @@ namespace MvcTest.Tests
         [TestMethod]
         public void TestEditConfirmGenreMoq()
         {
-            Game Game = new Game { ID = 1, Name = "The Wish" };
+            Game Game = new Game { ID = 2, Name = "The Wish" };
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGameById(2)).Returns(Game);
             context.Setup(s => s.SaveChanges()).Returns(0);
@@ -60,7 +60,7 @@ namespace MvcTest.Tests
         [TestMethod]
         public void TestEditModelNotValidMoq()
         {
-            Game Game = new Game { ID = 1, Name = "The Wish" };
+            Game Game = new Game { ID = 2, Name = "The Wish" };
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGameById(2)).Returns(Game);
             context.Setup(s => s.SaveChanges()).Returns(0);

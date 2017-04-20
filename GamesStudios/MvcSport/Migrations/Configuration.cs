@@ -5,15 +5,15 @@ namespace GamesStudios.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<GamesStudios.DAL.GamesStudiosDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<GamesStudios.DBContext.GamesStudiosDBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "GamesStudios.DAL.GamesStudiosDBContext";
+            ContextKey = "GamesStudios.DBContext.GamesStudiosDBContext";
         }
 
-        protected override void Seed(GamesStudios.DAL.GamesStudiosDBContext context)
+        protected override void Seed(GamesStudios.DBContext.GamesStudiosDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 

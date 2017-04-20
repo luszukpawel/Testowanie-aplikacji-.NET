@@ -6,7 +6,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 
-namespace GamesStudios.DAL
+namespace GamesStudios.DBContext
 {
     public class GamesStudiosDBContext : DbContext, IGamesStudiosDBContext
     {

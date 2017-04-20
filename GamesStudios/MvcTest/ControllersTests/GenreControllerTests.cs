@@ -55,19 +55,7 @@ namespace MvcTest.Tests
             Assert.AreEqual("aRPG", resultGenre.Name);
         }
 
-        [TestMethod]
-        public void GenreControllerTestEditModelNotValid()
-        {
-            var controller = new GenreController(context);
-
-            Genre Genre = new Genre { ID = 2, Name = "FC jRPG" };
-
-            controller.ViewData.ModelState.AddModelError("Data", "Podałeś złą datę");
-            var result = (ViewResult)controller.Edit(Genre);
-            Assert.AreEqual("Edit", result.ViewName);
-        }
-
-       
+     
 
         [TestMethod]
         public void GenreControllerCreate()
@@ -79,17 +67,6 @@ namespace MvcTest.Tests
             Assert.AreEqual("Create", result.ViewName);
         }
 
-        [TestMethod]
-        public void GenreControllerTestCreateNotValid()
-        {
-            var controller = new GenreController(context);
-
-            Genre Genre = new Genre { ID = 4, Name = "FC jRPG" };
-
-            controller.ViewData.ModelState.AddModelError("Data", "Podałeś złą datę");
-            var result = (ViewResult)controller.Create(Genre);
-            Assert.AreEqual("Create", result.ViewName);
-        }
 
         [TestMethod]
         public void GenreControllerTestDeleteValid()

@@ -5600,17 +5600,17 @@ button.close {
   -webkit-appearance: none;
 }
 
-.modal-open {
+.moDBContext-open {
   overflow: hidden;
 }
 
-body.modal-open,
-.modal-open .navbar-fixed-top,
-.modal-open .navbar-fixed-bottom {
+body.moDBContext-open,
+.moDBContext-open .navbar-fixed-top,
+.moDBContext-open .navbar-fixed-bottom {
   margin-right: 15px;
 }
 
-.modal {
+.moDBContext {
   position: fixed;
   top: 0;
   right: 0;
@@ -5622,7 +5622,7 @@ body.modal-open,
   overflow-y: scroll;
 }
 
-.modal.fade .modal-dialog {
+.moDBContext.fade .moDBContext-dialog {
   -webkit-transform: translate(0, -25%);
       -ms-transform: translate(0, -25%);
           transform: translate(0, -25%);
@@ -5632,13 +5632,13 @@ body.modal-open,
           transition: transform 0.3s ease-out;
 }
 
-.modal.in .modal-dialog {
+.moDBContext.in .moDBContext-dialog {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-.modal-dialog {
+.moDBContext-dialog {
   z-index: 1050;
   width: auto;
   padding: 10px;
@@ -5646,7 +5646,7 @@ body.modal-open,
   margin-left: auto;
 }
 
-.modal-content {
+.moDBContext-content {
   position: relative;
   background-color: #ffffff;
   border: 1px solid #999999;
@@ -5658,7 +5658,7 @@ body.modal-open,
   background-clip: padding-box;
 }
 
-.modal-backdrop {
+.moDBContext-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -5668,85 +5668,85 @@ body.modal-open,
   background-color: #000000;
 }
 
-.modal-backdrop.fade {
+.moDBContext-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-.modal-backdrop.in {
+.moDBContext-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-.modal-header {
+.moDBContext-header {
   min-height: 16.428571429px;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.modal-header .close {
+.moDBContext-header .close {
   margin-top: -2px;
 }
 
-.modal-title {
+.moDBContext-title {
   margin: 0;
   line-height: 1.428571429;
 }
 
-.modal-body {
+.moDBContext-body {
   position: relative;
   padding: 20px;
 }
 
-.modal-footer {
+.moDBContext-footer {
   padding: 19px 20px 20px;
   margin-top: 15px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
 
-.modal-footer:before,
-.modal-footer:after {
+.moDBContext-footer:before,
+.moDBContext-footer:after {
   display: table;
   content: " ";
 }
 
-.modal-footer:after {
+.moDBContext-footer:after {
   clear: both;
 }
 
-.modal-footer:before,
-.modal-footer:after {
+.moDBContext-footer:before,
+.moDBContext-footer:after {
   display: table;
   content: " ";
 }
 
-.modal-footer:after {
+.moDBContext-footer:after {
   clear: both;
 }
 
-.modal-footer .btn + .btn {
+.moDBContext-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
 }
 
-.modal-footer .btn-group .btn + .btn {
+.moDBContext-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
 
-.modal-footer .btn-block + .btn-block {
+.moDBContext-footer .btn-block + .btn-block {
   margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .modal-dialog {
+  .moDBContext-dialog {
     right: auto;
     left: 50%;
     width: 600px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .modal-content {
+  .moDBContext-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }

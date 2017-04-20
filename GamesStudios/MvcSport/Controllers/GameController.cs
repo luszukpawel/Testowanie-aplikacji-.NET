@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using GamesStudios.DAL;
+using GamesStudios.DBContext;
 using GamesStudios.Models;
 
 namespace GamesStudios.Controllers

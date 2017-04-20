@@ -998,7 +998,7 @@ th {
 .glyphicon-menu-hamburger:before {
   content: "\e236";
 }
-.glyphicon-modal-window:before {
+.glyphicon-moDBContext-window:before {
   content: "\e237";
 }
 .glyphicon-oil:before {
@@ -5867,10 +5867,10 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-.modal-open {
+.moDBContext-open {
   overflow: hidden;
 }
-.modal {
+.moDBContext {
   display: none;
   overflow: hidden;
   position: fixed;
@@ -5882,7 +5882,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
-.modal.fade .modal-dialog {
+.moDBContext.fade .moDBContext-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
@@ -5891,22 +5891,22 @@ button.close {
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
-.modal.in .modal-dialog {
+.moDBContext.in .moDBContext-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.modal-open .modal {
+.moDBContext-open .moDBContext {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.modal-dialog {
+.moDBContext-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
-.modal-content {
+.moDBContext-content {
   position: relative;
   background-color: #202020;
   border: 1px solid #999999;
@@ -5918,7 +5918,7 @@ button.close {
           background-clip: padding-box;
   outline: 0;
 }
-.modal-backdrop {
+.moDBContext-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -5927,45 +5927,45 @@ button.close {
   z-index: 1040;
   background-color: #000000;
 }
-.modal-backdrop.fade {
+.moDBContext-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.modal-backdrop.in {
+.moDBContext-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-.modal-header {
+.moDBContext-header {
   padding: 15px;
   border-bottom: 1px solid #282828;
 }
-.modal-header .close {
+.moDBContext-header .close {
   margin-top: -2px;
 }
-.modal-title {
+.moDBContext-title {
   margin: 0;
   line-height: 1.42857143;
 }
-.modal-body {
+.moDBContext-body {
   position: relative;
   padding: 20px;
 }
-.modal-footer {
+.moDBContext-footer {
   padding: 20px;
   text-align: right;
   border-top: 1px solid #282828;
 }
-.modal-footer .btn + .btn {
+.moDBContext-footer .btn + .btn {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn {
+.moDBContext-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
-.modal-footer .btn-block + .btn-block {
+.moDBContext-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-.modal-scrollbar-measure {
+.moDBContext-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -5973,20 +5973,20 @@ button.close {
   overflow: scroll;
 }
 @media (min-width: 768px) {
-  .modal-dialog {
+  .moDBContext-dialog {
     width: 600px;
     margin: 30px auto;
   }
-  .modal-content {
+  .moDBContext-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-  .modal-sm {
+  .moDBContext-sm {
     width: 300px;
   }
 }
 @media (min-width: 992px) {
-  .modal-lg {
+  .moDBContext-lg {
     width: 900px;
   }
 }
@@ -6487,10 +6487,10 @@ button.close {
 .pager:after,
 .panel-body:before,
 .panel-body:after,
-.modal-header:before,
-.modal-header:after,
-.modal-footer:before,
-.modal-footer:after {
+.moDBContext-header:before,
+.moDBContext-header:after,
+.moDBContext-footer:before,
+.moDBContext-footer:after {
   content: " ";
   display: table;
 }
@@ -6508,8 +6508,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-header:after,
-.modal-footer:after {
+.moDBContext-header:after,
+.moDBContext-footer:after {
   clear: both;
 }
 .center-block {
