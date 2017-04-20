@@ -1489,7 +1489,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	---------------------------------------------------------------------- */
 
 	// Support: IE<8
-	// Verify that getAttribute really returns attributes and not properties (excepting IE8 booleans)
+	// Verify that getAttribute RPGly returns attributes and not properties (excepting IE8 booleans)
 	support.attributes = assert(function( div ) {
 		div.className = "i";
 		return !div.getAttribute("className");
@@ -9657,7 +9657,7 @@ jQuery.fn.extend({
 			// we assume that getBoundingClientRect is available when computed position is fixed
 			offset = elem.getBoundingClientRect();
 		} else {
-			// Get *real* offsetParent
+			// Get *RPG* offsetParent
 			offsetParent = this.offsetParent();
 
 			// Get correct offsets

@@ -24,25 +24,38 @@ namespace CodedUITests
         public void CodedUITestMethod1()
         {
 
-            //  this.UIMap.OpenFirefox();
-            // this.UIMap.OpenApp();
-            // this.UIMap.OpenFirefoxandGotoPage();
-          //  this.UIMap.OpenFirefoxandGotoMainPage();
-          //  this.UIMap.AddNewGame();
+            // this.UIMap.infugedu();
+            //  this.UIMap.Edgetest();
+            // this.UIMap.ExplorerTest();
 
-           
+            this.UIMap.ASDXD();
+
+            // this.UIMap.XD();
+
+            //this.UIMap.OpenFirefox();
+            // this.UIMap.OpenApp();
+            //this.UIMap.OpenFirefoxandGotoPage();
+            // this.UIMap.TEST1();
+
+            //  this.UIMap.OpenFirefoxandGotoMainPage();
+            //  this.UIMap.AddNewGame();
+
+            // this.UIMap.kalk2();
+            // this.UIMap.mozilla();
+
+            // this.UIMap.kalktest();
 
             // this.UIMap.GoToGamesAndCreateNew();
 
-            /*
-            this.UIMap.OpenInternetExplorer();
-            this.UIMap.OpenApp();
-            this.UIMap.ListaOsobClick();
-            this.UIMap.SprAdresClick();
-            this.UIMap.ClickEditAdres();
-            this.UIMap.EditMiastoPerson();
-            this.UIMap.SaveAdresPersonClick();
-            */
+            /*   
+               this.UIMap.OpenInternetExplorer();
+               this.UIMap.OpenApp();
+               this.UIMap.ListaOsobClick();
+               this.UIMap.SprAdresClick();
+               this.UIMap.ClickEditAdres();
+               this.UIMap.EditMiastoPerson();
+               this.UIMap.SaveAdresPersonClick();
+             */
         }
 
         #region Additional test attributes
@@ -67,15 +80,10 @@ namespace CodedUITests
 
         public TestContext TestContext
         {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
+            get { return testContextInstance; }
+            set { testContextInstance = value; }
         }
+
         private TestContext testContextInstance;
 
         public UIMap UIMap
@@ -92,5 +100,6 @@ namespace CodedUITests
         }
 
         private UIMap map;
+
     }
 }

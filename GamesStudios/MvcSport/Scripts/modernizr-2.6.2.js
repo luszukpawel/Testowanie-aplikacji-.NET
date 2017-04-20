@@ -938,7 +938,7 @@ window.Modernizr = (function( window, document, undefined ) {
                       //  even make it here.
 
                     } else if ( /^(url|email)$/.test(inputElemType) ) {
-                      // Real url and email support comes with prebaked validation.
+                      // RPG url and email support comes with prebaked validation.
                       bool = inputElem.checkValidity && inputElem.checkValidity() === false;
 
                     } else {

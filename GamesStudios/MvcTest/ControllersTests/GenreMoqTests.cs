@@ -16,8 +16,7 @@ namespace MvcTest.Tests
         {
             Genre Genre = new Genre();
             Genre.ID = 1;
-            Genre.Name = "Real";
-           // Genre.doc = new DateTime(1889, 12, 1);
+            Genre.Name = "RPG";
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGenreById(2)).Returns(Genre);
             var controller = new GenreController(context.Object);
@@ -26,16 +25,15 @@ namespace MvcTest.Tests
 
             Assert.AreEqual("Details", result.ViewName);
             var resultGenre = (Genre)result.Model;
-            Assert.AreEqual("Real", resultGenre.Name);
+            Assert.AreEqual("RPG", resultGenre.Name);
         }
 
         [TestMethod]
         public void TestEditGenreMoq()
         {
             Genre Genre = new Genre();
-            Genre.ID = 1;
-            Genre.Name = "Real";
-           // Genre.doc = new DateTime(1889, 12, 1);
+            Genre.ID = 2;
+            Genre.Name = "RPG";
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGenreById(2)).Returns(Genre);
             var controller = new GenreController(context.Object);
@@ -44,7 +42,7 @@ namespace MvcTest.Tests
 
             Assert.AreEqual("Edit", result.ViewName);
             var resultGenre = (Genre)result.Model;
-            Assert.AreEqual("Real", resultGenre.Name);
+            Assert.AreEqual("RPG", resultGenre.Name);
         }
 
         [TestMethod]
@@ -52,14 +50,13 @@ namespace MvcTest.Tests
         {
             Genre Genre = new Genre();
             Genre.ID = 1;
-            Genre.Name = "Real";
-          //  Genre.doc = new DateTime(1889, 11, 1);
+            Genre.Name = "RPG";
             Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
             context.Setup(x => x.FindGenreById(2)).Returns(Genre);
             context.Setup(s => s.SaveChanges()).Returns(0);
             var controller = new GenreController(context.Object);
 
-            Genre.Name = "Barcelona";
+            Genre.Name = "jRPG";
           //  Genre.doc = new DateTime(1889, 12, 1);
             var result = controller.Edit(Genre) as RedirectToRouteResult;
 
@@ -67,25 +64,7 @@ namespace MvcTest.Tests
             Assert.AreEqual("Genre", result.RouteValues["Controller"]);
         }
 
-        [TestMethod]
-        public void TestEditModelNotValidMoq()
-        {
-            Genre Genre = new Genre();
-            Genre.ID = 1;
-            Genre.Name = "Real";
-          //  Genre.doc = new DateTime(1889, 12, 1);
-            Mock<IGamesStudiosDBContext> context = new Mock<IGamesStudiosDBContext>();
-            context.Setup(x => x.FindGenreById(2)).Returns(Genre);
-            context.Setup(s => s.SaveChanges()).Returns(0);
-            var controller = new GenreController(context.Object);
 
-            Genre.Name = "Barcelona";
-          ///  Genre.doc = new DateTime(1200, 11, 1);
-
-            controller.ViewData.ModelState.AddModelError("Date", "Podałeś złą datę");
-            var result = (ViewResult)controller.Edit(Genre);
-            Assert.AreEqual("Edit", result.ViewName);
-        }
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]

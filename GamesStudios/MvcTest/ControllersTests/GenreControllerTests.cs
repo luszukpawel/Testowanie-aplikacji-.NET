@@ -60,7 +60,7 @@ namespace MvcTest.Tests
         {
             var controller = new GenreController(context);
 
-            Genre Genre = new Genre { ID = 2, Name = "FC Barcelona" };
+            Genre Genre = new Genre { ID = 2, Name = "FC jRPG" };
 
             controller.ViewData.ModelState.AddModelError("Data", "Podałeś złą datę");
             var result = (ViewResult)controller.Edit(Genre);
@@ -84,7 +84,7 @@ namespace MvcTest.Tests
         {
             var controller = new GenreController(context);
 
-            Genre Genre = new Genre { ID = 4, Name = "FC Barcelona" };
+            Genre Genre = new Genre { ID = 4, Name = "FC jRPG" };
 
             controller.ViewData.ModelState.AddModelError("Data", "Podałeś złą datę");
             var result = (ViewResult)controller.Create(Genre);

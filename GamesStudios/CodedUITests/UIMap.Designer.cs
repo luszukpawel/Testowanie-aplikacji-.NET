@@ -271,6 +271,323 @@ namespace CodedUITests
             Mouse.Click(uICreateButton, new Point(29, 16));
         }
         
+        /// <summary>
+        /// kalktest
+        /// </summary>
+        public void kalktest()
+        {
+            #region Variable Declarations
+            WinButton uISearchWindowsButton = this.UISearchWindowsWindow.UISearchWindowsButton;
+            #endregion
+
+            // Click 'Search Windows' button
+            Mouse.Click(uISearchWindowsButton, new Point(23, 23));
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+        }
+        
+        /// <summary>
+        /// kalk2 - Use 'kalk2Params' to pass parameters into this method.
+        /// </summary>
+        public void kalk2()
+        {
+
+            // Launch '%ProgramW6432%\WindowsApps\Microsoft.WindowsCalculator_10.1703.601.0_x64__8wekyb3d8bbwe\Calculator.exe' with arguments '-ServerName:App.AppXsm3pg4n7er43kdh1qp4e79f1j7am68r8.mca'
+            ApplicationUnderTest calculatorApplication = ApplicationUnderTest.Launch(this.kalk2Params.ExePath, this.kalk2Params.AlternateExePath, "-ServerName:App.AppXsm3pg4n7er43kdh1qp4e79f1j7am68r8.mca");
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+        }
+        
+        /// <summary>
+        /// mozilla
+        /// </summary>
+        public void mozilla()
+        {
+            #region Variable Declarations
+            WinButton uICloseButton = this.UIAktualizacjaaplikacjWindow.UIAktualizacjaaplikacjTitleBar.UICloseButton;
+            WinListItem uIMozillaFirefoxListItem = this.UIProgramManagerWindow.UIDesktopList.UIMozillaFirefoxListItem;
+            #endregion
+
+            // Click 'Close' button
+            Mouse.Click(uICloseButton, new Point(28, 10));
+
+            // Double-Click 'Mozilla Firefox' list item
+            Mouse.DoubleClick(uIMozillaFirefoxListItem, new Point(22, 18));
+        }
+        
+        /// <summary>
+        /// XD - Use 'XDParams' to pass parameters into this method.
+        /// </summary>
+        public void XD()
+        {
+            #region Variable Declarations
+            WinComboBox uIItemComboBox = this.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox;
+            WinListItem uIUGoogleWyszukiwanieListItem = this.UIItemWindow1.UIItemList.UIUGoogleWyszukiwanieListItem;
+            WinEdit uIWprowadźadreslubszukEdit = this.UIStronastartowaprograWindow.UIItemComboBox.UIWprowadźadreslubszukEdit;
+            #endregion
+
+            // Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+            ApplicationUnderTest firefoxApplication = ApplicationUnderTest.Launch(this.XDParams.ExePath, this.XDParams.AlternateExePath);
+
+            // Select 'U' in combo box
+            uIItemComboBox.EditableItem = this.XDParams.UIItemComboBoxEditableItem;
+
+            // Type '{Back}' in 'U Google Wyszukiwanie' list item
+            Keyboard.SendKeys(uIUGoogleWyszukiwanieListItem, this.XDParams.UIUGoogleWyszukiwanieListItemSendKeys, ModifierKeys.None);
+
+            // Select 'CODEDUI' in combo box
+            uIItemComboBox.EditableItem = this.XDParams.UIItemComboBoxEditableItem1;
+
+            // Type '{Enter}' in 'Wprowadź adres lub szukaj' text box
+            Keyboard.SendKeys(uIWprowadźadreslubszukEdit, this.XDParams.UIWprowadźadreslubszukEditSendKeys, ModifierKeys.None);
+
+            // Last mouse action was not recorded.
+        }
+        
+        /// <summary>
+        /// TEST1 - Use 'TEST1Params' to pass parameters into this method.
+        /// </summary>
+        public void TEST1()
+        {
+            #region Variable Declarations
+            WinComboBox uIItemComboBox = this.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox;
+            WinEdit uIPocztaEdit = this.UIStronastartowaprograWindow.UIPocztaHyperlink.UIPocztaEdit;
+            WinButton uIWsteczButton = this.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIWsteczButton;
+            WinEdit uIPlanzajęćEdit = this.UIStronastartowaprograWindow.UIPlanzajęćHyperlink.UIPlanzajęćEdit;
+            #endregion
+
+            // Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+            ApplicationUnderTest firefoxApplication = ApplicationUnderTest.Launch(this.TEST1Params.ExePath, this.TEST1Params.AlternateExePath);
+
+            // Element not available
+
+            // Select 'https://inf.ug.edu.pl/aktualnosci' in combo box
+            uIItemComboBox.EditableItem = this.TEST1Params.UIItemComboBoxEditableItem;
+
+            // Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+            ApplicationUnderTest uIStronastartowaprograWindow = ApplicationUnderTest.Launch(this.TEST1Params.UIStronastartowaprograWindowExePath, this.TEST1Params.UIStronastartowaprograWindowAlternateExePath);
+
+            // Click 'Poczta' text box
+            Mouse.Click(uIPocztaEdit, new Point(22, 7));
+
+            // Click 'Wstecz' button
+            Mouse.Click(uIWsteczButton, new Point(21, 16));
+
+            // Click 'Plan zajęć' text box
+            Mouse.Click(uIPlanzajęćEdit, new Point(40, 6));
+        }
+        
+        /// <summary>
+        /// infugedu - Use 'infugeduParams' to pass parameters into this method.
+        /// </summary>
+        public void infugedu()
+        {
+            #region Variable Declarations
+            WinComboBox uIItemComboBox = this.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox;
+            WinList uIItemList = this.UIStronastartowaprograWindow.UIMozillaFirefoxApplication.UIItemList;
+            WinEdit uIDlakierunkustudiówEdit = this.UIStronastartowaprograWindow.UIDlakierunkustudiówHyperlink.UIDlakierunkustudiówEdit;
+            WinEdit uIInformatykaIIIrokEdit = this.UIStronastartowaprograWindow.UIInformatykaIIIrokHyperlink.UIInformatykaIIIrokEdit;
+            #endregion
+
+            // Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+            ApplicationUnderTest firefoxApplication = ApplicationUnderTest.Launch(this.infugeduParams.ExePath, this.infugeduParams.AlternateExePath);
+
+            // Element not available
+
+            // Select 'https://inf.ug.edu.pl/aktualnosci' in combo box
+            uIItemComboBox.EditableItem = this.infugeduParams.UIItemComboBoxEditableItem;
+
+            // Select '' in list box
+            uIItemList.SelectedItemsAsString = this.infugeduParams.UIItemListSelectedItemsAsString;
+
+            // Click 'dla kierunku studiów' text box
+            Mouse.Click(uIDlakierunkustudiówEdit, new Point(125, 9));
+
+            // Click 'informatyka: III rok' text box
+            Mouse.Click(uIInformatykaIIIrokEdit, new Point(10, 3));
+        }
+        
+        /// <summary>
+        /// Edgetest - Use 'EdgetestParams' to pass parameters into this method.
+        /// </summary>
+        public void Edgetest()
+        {
+
+            // Launch '%windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe' with arguments '-ServerName:MicrosoftEdge.AppXdnhjhccw3zf0j06tkg3jtqr00qdm0khc.mca'
+            ApplicationUnderTest microsoftEdgeApplication = ApplicationUnderTest.Launch(this.EdgetestParams.ExePath, this.EdgetestParams.AlternateExePath, "-ServerName:MicrosoftEdge.AppXdnhjhccw3zf0j06tkg3jtqr00qdm0khc.mca");
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+
+            // To test Windows Store apps, use the Coded UI Test project template for Windows Store apps under the Windows Store node.
+        }
+        
+        /// <summary>
+        /// ExplorerTest - Use 'ExplorerTestParams' to pass parameters into this method.
+        /// </summary>
+        public void ExplorerTest()
+        {
+            #region Variable Declarations
+            HtmlDiv uIBanner1_homepage_02dPane = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIBanner1_homepage_02dPane;
+            HtmlHyperlink uIOfficeHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIMainCustom.UIOfficeHyperlink;
+            HtmlCustom uIHeadercommonCustom = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIHeadercommonCustom;
+            HtmlEdit uIQEdit = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIQEdit;
+            HtmlHyperlink uIFacebookHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIMainCustom.UIFacebookHyperlink;
+            HtmlEdit uIFirstnameEdit = this.UIMSNPolskaOutlookSkypWindow.UIWitamynaFacebookuZalDocument.UIFirstnameEdit;
+            HtmlEdit uILastnameEdit = this.UIMSNPolskaOutlookSkypWindow.UIWitamynaFacebookuZalDocument.UILastnameEdit;
+            HtmlEdit uIReg_email__Edit = this.UIMSNPolskaOutlookSkypWindow.UIWitamynaFacebookuZalDocument.UIReg_email__Edit;
+            #endregion
+
+            // Go to web page 'http://go.microsoft.com/fwlink/p/?LinkId=255141' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.ExplorerTestParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Set flag to allow play back to continue if non-essential actions fail. (For example, if a mouse hover action fails.)
+            Playback.PlaybackSettings.ContinueOnError = true;
+
+            // Mouse hover 'banner1_homepage_02d5ea88-a2b5-4ac6-9560-7c3f4dc04...' pane at (1, 1)
+            Mouse.Hover(uIBanner1_homepage_02dPane, new Point(1, 1));
+
+            // Mouse hover 'Office' link at (1, 1)
+            Mouse.Hover(uIOfficeHyperlink, new Point(1, 1));
+
+            // Mouse hover 'header-common' custom control at (1, 1)
+            Mouse.Hover(uIHeadercommonCustom, new Point(1, 1));
+
+            // Mouse hover 'q' text box at (1, 1)
+            Mouse.Hover(uIQEdit, new Point(1, 1));
+
+            // Reset flag to ensure that play back stops if there is an error.
+            Playback.PlaybackSettings.ContinueOnError = false;
+
+            // Click 'Facebook' link
+            Mouse.Click(uIFacebookHyperlink, new Point(31, 21));
+
+            // Type 'xd' in 'firstname' text box
+            uIFirstnameEdit.Text = this.ExplorerTestParams.UIFirstnameEditText;
+
+            // Type 'xd' in 'lastname' text box
+            uILastnameEdit.Text = this.ExplorerTestParams.UILastnameEditText;
+
+            // Type 'xd' in 'reg_email__' text box
+            uIReg_email__Edit.Text = this.ExplorerTestParams.UIReg_email__EditText;
+        }
+        
+        /// <summary>
+        /// ASDXD - Use 'ASDXDParams' to pass parameters into this method.
+        /// </summary>
+        public void ASDXD()
+        {
+            #region Variable Declarations
+            HtmlEdit uIQEdit = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIQEdit;
+            HtmlDiv uIB_contentPane = this.UIMSNPolskaOutlookSkypWindow.UIXDBingDocument.UIB_contentPane;
+            HtmlHyperlink uIDisneyXDOficjalnastrHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIXDBingDocument.UIB_resultsCustom.UIDisneyXDOficjalnastrHyperlink;
+            #endregion
+
+            // Go to web page 'http://go.microsoft.com/fwlink/p/?LinkId=255141' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.ASDXDParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Type 'XD' in 'q' text box
+            uIQEdit.Text = this.ASDXDParams.UIQEditText;
+
+            // Type '{Enter}' in 'q' text box
+            Keyboard.SendKeys(uIQEdit, this.ASDXDParams.UIQEditSendKeys, ModifierKeys.None);
+
+            // Set flag to allow play back to continue if non-essential actions fail. (For example, if a mouse hover action fails.)
+            Playback.PlaybackSettings.ContinueOnError = true;
+
+            // Mouse hover 'b_content' pane at (1, 1)
+            Mouse.Hover(uIB_contentPane, new Point(1, 1));
+
+            // Reset flag to ensure that play back stops if there is an error.
+            Playback.PlaybackSettings.ContinueOnError = false;
+
+            // Click 'Disney XD - Oficjalna strona Disney XD w Polsce' link
+            Mouse.Click(uIDisneyXDOficjalnastrHyperlink, new Point(290, 11));
+        }
+        
         #region Properties
         public virtual OpenInternetExplorerParams OpenInternetExplorerParams
         {
@@ -368,6 +685,90 @@ namespace CodedUITests
             }
         }
         
+        public virtual kalk2Params kalk2Params
+        {
+            get
+            {
+                if ((this.mkalk2Params == null))
+                {
+                    this.mkalk2Params = new kalk2Params();
+                }
+                return this.mkalk2Params;
+            }
+        }
+        
+        public virtual XDParams XDParams
+        {
+            get
+            {
+                if ((this.mXDParams == null))
+                {
+                    this.mXDParams = new XDParams();
+                }
+                return this.mXDParams;
+            }
+        }
+        
+        public virtual TEST1Params TEST1Params
+        {
+            get
+            {
+                if ((this.mTEST1Params == null))
+                {
+                    this.mTEST1Params = new TEST1Params();
+                }
+                return this.mTEST1Params;
+            }
+        }
+        
+        public virtual infugeduParams infugeduParams
+        {
+            get
+            {
+                if ((this.minfugeduParams == null))
+                {
+                    this.minfugeduParams = new infugeduParams();
+                }
+                return this.minfugeduParams;
+            }
+        }
+        
+        public virtual EdgetestParams EdgetestParams
+        {
+            get
+            {
+                if ((this.mEdgetestParams == null))
+                {
+                    this.mEdgetestParams = new EdgetestParams();
+                }
+                return this.mEdgetestParams;
+            }
+        }
+        
+        public virtual ExplorerTestParams ExplorerTestParams
+        {
+            get
+            {
+                if ((this.mExplorerTestParams == null))
+                {
+                    this.mExplorerTestParams = new ExplorerTestParams();
+                }
+                return this.mExplorerTestParams;
+            }
+        }
+        
+        public virtual ASDXDParams ASDXDParams
+        {
+            get
+            {
+                if ((this.mASDXDParams == null))
+                {
+                    this.mASDXDParams = new ASDXDParams();
+                }
+                return this.mASDXDParams;
+            }
+        }
+        
         public UIMSNPolskaOutlookSkypWindow UIMSNPolskaOutlookSkypWindow
         {
             get
@@ -451,6 +852,54 @@ namespace CodedUITests
                 return this.mUIItemWindow1;
             }
         }
+        
+        public UISearchWindowsWindow UISearchWindowsWindow
+        {
+            get
+            {
+                if ((this.mUISearchWindowsWindow == null))
+                {
+                    this.mUISearchWindowsWindow = new UISearchWindowsWindow();
+                }
+                return this.mUISearchWindowsWindow;
+            }
+        }
+        
+        public UIAktualizacjaaplikacjWindow UIAktualizacjaaplikacjWindow
+        {
+            get
+            {
+                if ((this.mUIAktualizacjaaplikacjWindow == null))
+                {
+                    this.mUIAktualizacjaaplikacjWindow = new UIAktualizacjaaplikacjWindow();
+                }
+                return this.mUIAktualizacjaaplikacjWindow;
+            }
+        }
+        
+        public UIProgramManagerWindow UIProgramManagerWindow
+        {
+            get
+            {
+                if ((this.mUIProgramManagerWindow == null))
+                {
+                    this.mUIProgramManagerWindow = new UIProgramManagerWindow();
+                }
+                return this.mUIProgramManagerWindow;
+            }
+        }
+        
+        public UIStronastartowaprograWindow UIStronastartowaprograWindow
+        {
+            get
+            {
+                if ((this.mUIStronastartowaprograWindow == null))
+                {
+                    this.mUIStronastartowaprograWindow = new UIStronastartowaprograWindow();
+                }
+                return this.mUIStronastartowaprograWindow;
+            }
+        }
         #endregion
         
         #region Fields
@@ -470,6 +919,20 @@ namespace CodedUITests
         
         private AddNewGameParams mAddNewGameParams;
         
+        private kalk2Params mkalk2Params;
+        
+        private XDParams mXDParams;
+        
+        private TEST1Params mTEST1Params;
+        
+        private infugeduParams minfugeduParams;
+        
+        private EdgetestParams mEdgetestParams;
+        
+        private ExplorerTestParams mExplorerTestParams;
+        
+        private ASDXDParams mASDXDParams;
+        
         private UIMSNPolskaOutlookSkypWindow mUIMSNPolskaOutlookSkypWindow;
         
         private UIAllMyASPNETApplicatiWindow mUIAllMyASPNETApplicatiWindow;
@@ -483,6 +946,14 @@ namespace CodedUITests
         private UIItemWindow mUIItemWindow;
         
         private UIItemWindow1 mUIItemWindow1;
+        
+        private UISearchWindowsWindow mUISearchWindowsWindow;
+        
+        private UIAktualizacjaaplikacjWindow mUIAktualizacjaaplikacjWindow;
+        
+        private UIProgramManagerWindow mUIProgramManagerWindow;
+        
+        private UIStronastartowaprograWindow mUIStronastartowaprograWindow;
         #endregion
     }
     
@@ -666,6 +1137,208 @@ namespace CodedUITests
         #endregion
     }
     
+    /// <summary>
+    /// Parameters to be passed into 'kalk2'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class kalk2Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Launch '%ProgramW6432%\WindowsApps\Microsoft.WindowsCalculator_10.1703.601.0_x64__8wekyb3d8bbwe\Calculator.exe' with arguments '-ServerName:App.AppXsm3pg4n7er43kdh1qp4e79f1j7am68r8.mca'
+        /// </summary>
+        public string ExePath = "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_10.1703.601.0_x64__8weky" +
+            "b3d8bbwe\\Calculator.exe";
+        
+        /// <summary>
+        /// Launch '%ProgramW6432%\WindowsApps\Microsoft.WindowsCalculator_10.1703.601.0_x64__8wekyb3d8bbwe\Calculator.exe' with arguments '-ServerName:App.AppXsm3pg4n7er43kdh1qp4e79f1j7am68r8.mca'
+        /// </summary>
+        public string AlternateExePath = "%ProgramW6432%\\WindowsApps\\Microsoft.WindowsCalculator_10.1703.601.0_x64__8wekyb3" +
+            "d8bbwe\\Calculator.exe";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'XD'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class XDParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string ExePath = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string AlternateExePath = "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Select 'U' in combo box
+        /// </summary>
+        public string UIItemComboBoxEditableItem = "U";
+        
+        /// <summary>
+        /// Type '{Back}' in 'U Google Wyszukiwanie' list item
+        /// </summary>
+        public string UIUGoogleWyszukiwanieListItemSendKeys = "{Back}";
+        
+        /// <summary>
+        /// Select 'CODEDUI' in combo box
+        /// </summary>
+        public string UIItemComboBoxEditableItem1 = "CODEDUI";
+        
+        /// <summary>
+        /// Type '{Enter}' in 'Wprowadź adres lub szukaj' text box
+        /// </summary>
+        public string UIWprowadźadreslubszukEditSendKeys = "{Enter}";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'TEST1'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class TEST1Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string ExePath = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string AlternateExePath = "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Select 'https://inf.ug.edu.pl/aktualnosci' in combo box
+        /// </summary>
+        public string UIItemComboBoxEditableItem = "https://inf.ug.edu.pl/aktualnosci";
+        
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string UIStronastartowaprograWindowExePath = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string UIStronastartowaprograWindowAlternateExePath = "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'infugedu'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class infugeduParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string ExePath = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// </summary>
+        public string AlternateExePath = "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe";
+        
+        /// <summary>
+        /// Select 'https://inf.ug.edu.pl/aktualnosci' in combo box
+        /// </summary>
+        public string UIItemComboBoxEditableItem = "https://inf.ug.edu.pl/aktualnosci";
+        
+        /// <summary>
+        /// Select '' in list box
+        /// </summary>
+        public string UIItemListSelectedItemsAsString = "";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'Edgetest'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class EdgetestParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Launch '%windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe' with arguments '-ServerName:MicrosoftEdge.AppXdnhjhccw3zf0j06tkg3jtqr00qdm0khc.mca'
+        /// </summary>
+        public string ExePath = "C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdge.exe";
+        
+        /// <summary>
+        /// Launch '%windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe' with arguments '-ServerName:MicrosoftEdge.AppXdnhjhccw3zf0j06tkg3jtqr00qdm0khc.mca'
+        /// </summary>
+        public string AlternateExePath = "%windir%\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdge.exe";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'ExplorerTest'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class ExplorerTestParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://go.microsoft.com/fwlink/p/?LinkId=255141' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://go.microsoft.com/fwlink/p/?LinkId=255141";
+        
+        /// <summary>
+        /// Type 'xd' in 'firstname' text box
+        /// </summary>
+        public string UIFirstnameEditText = "xd";
+        
+        /// <summary>
+        /// Type 'xd' in 'lastname' text box
+        /// </summary>
+        public string UILastnameEditText = "xd";
+        
+        /// <summary>
+        /// Type 'xd' in 'reg_email__' text box
+        /// </summary>
+        public string UIReg_email__EditText = "xd";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'ASDXD'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class ASDXDParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://go.microsoft.com/fwlink/p/?LinkId=255141' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://go.microsoft.com/fwlink/p/?LinkId=255141";
+        
+        /// <summary>
+        /// Type 'XD' in 'q' text box
+        /// </summary>
+        public string UIQEditText = "XD";
+        
+        /// <summary>
+        /// Type '{Enter}' in 'q' text box
+        /// </summary>
+        public string UIQEditSendKeys = "{Enter}";
+        #endregion
+    }
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIMSNPolskaOutlookSkypWindow : BrowserWindow
     {
@@ -679,6 +1352,11 @@ namespace CodedUITests
             this.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
                     "ve");
             this.WindowTitles.Add("ErrorPage");
+            this.WindowTitles.Add("inf ug edu - Bing");
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG");
+            this.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie");
+            this.WindowTitles.Add("Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej");
+            this.WindowTitles.Add("XD - Bing");
             #endregion
         }
         
@@ -711,12 +1389,96 @@ namespace CodedUITests
                 return this.mUIErrorPageDocument;
             }
         }
+        
+        public UIMSNPolskaOutlookSkypDocument UIMSNPolskaOutlookSkypDocument
+        {
+            get
+            {
+                if ((this.mUIMSNPolskaOutlookSkypDocument == null))
+                {
+                    this.mUIMSNPolskaOutlookSkypDocument = new UIMSNPolskaOutlookSkypDocument(this);
+                }
+                return this.mUIMSNPolskaOutlookSkypDocument;
+            }
+        }
+        
+        public UIInfugeduBingDocument UIInfugeduBingDocument
+        {
+            get
+            {
+                if ((this.mUIInfugeduBingDocument == null))
+                {
+                    this.mUIInfugeduBingDocument = new UIInfugeduBingDocument(this);
+                }
+                return this.mUIInfugeduBingDocument;
+            }
+        }
+        
+        public UIWydarzeniaInstytutInDocument UIWydarzeniaInstytutInDocument
+        {
+            get
+            {
+                if ((this.mUIWydarzeniaInstytutInDocument == null))
+                {
+                    this.mUIWydarzeniaInstytutInDocument = new UIWydarzeniaInstytutInDocument(this);
+                }
+                return this.mUIWydarzeniaInstytutInDocument;
+            }
+        }
+        
+        public UIPocztainfugeduplLogoDocument UIPocztainfugeduplLogoDocument
+        {
+            get
+            {
+                if ((this.mUIPocztainfugeduplLogoDocument == null))
+                {
+                    this.mUIPocztainfugeduplLogoDocument = new UIPocztainfugeduplLogoDocument(this);
+                }
+                return this.mUIPocztainfugeduplLogoDocument;
+            }
+        }
+        
+        public UIWitamynaFacebookuZalDocument UIWitamynaFacebookuZalDocument
+        {
+            get
+            {
+                if ((this.mUIWitamynaFacebookuZalDocument == null))
+                {
+                    this.mUIWitamynaFacebookuZalDocument = new UIWitamynaFacebookuZalDocument(this);
+                }
+                return this.mUIWitamynaFacebookuZalDocument;
+            }
+        }
+        
+        public UIXDBingDocument UIXDBingDocument
+        {
+            get
+            {
+                if ((this.mUIXDBingDocument == null))
+                {
+                    this.mUIXDBingDocument = new UIXDBingDocument(this);
+                }
+                return this.mUIXDBingDocument;
+            }
+        }
         #endregion
         
         #region Fields
         private UIKontrolkakombiadresuToolBar mUIKontrolkakombiadresuToolBar;
         
         private UIErrorPageDocument mUIErrorPageDocument;
+        
+        private UIMSNPolskaOutlookSkypDocument mUIMSNPolskaOutlookSkypDocument;
+        
+        private UIInfugeduBingDocument mUIInfugeduBingDocument;
+        
+        private UIWydarzeniaInstytutInDocument mUIWydarzeniaInstytutInDocument;
+        
+        private UIPocztainfugeduplLogoDocument mUIPocztainfugeduplLogoDocument;
+        
+        private UIWitamynaFacebookuZalDocument mUIWitamynaFacebookuZalDocument;
+        
+        private UIXDBingDocument mUIXDBingDocument;
         #endregion
     }
     
@@ -803,6 +1565,666 @@ namespace CodedUITests
         
         #region Fields
         private HtmlButton mUIListaosóbButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIMSNPolskaOutlookSkypDocument : HtmlDocument
+    {
+        
+        public UIMSNPolskaOutlookSkypDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                "ve";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/pl-pl/";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://www.msn.com/pl-pl/?ocid=iehp&pc=EUPP_";
+            this.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                    "ve");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlEdit UIQEdit
+        {
+            get
+            {
+                if ((this.mUIQEdit == null))
+                {
+                    this.mUIQEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUIQEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "q";
+                    this.mUIQEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "q";
+                    this.mUIQEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = null;
+                    this.mUIQEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUIQEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUIQEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = null;
+                    this.mUIQEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"q\" id=\"q\" accesskey=\"S\" aria-label";
+                    this.mUIQEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "1";
+                    this.mUIQEdit.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIQEdit;
+            }
+        }
+        
+        public HtmlIFrame UIUtif_banner1_homepagFrame
+        {
+            get
+            {
+                if ((this.mUIUtif_banner1_homepagFrame == null))
+                {
+                    this.mUIUtif_banner1_homepagFrame = new HtmlIFrame(this);
+                    #region Search Criteria
+                    this.mUIUtif_banner1_homepagFrame.SearchProperties[HtmlFrame.PropertyNames.Id] = "utif_banner1_homepage_container_df5f8430-14fe-4c49-a08e-963b1b0ec39c_87a26c39-9de" +
+                        "2-4f25-8a98-424df05362dd";
+                    this.mUIUtif_banner1_homepagFrame.SearchProperties[HtmlFrame.PropertyNames.Name] = "utif_banner1_homepage_container_df5f8430-14fe-4c49-a08e-963b1b0ec39c_87a26c39-9de" +
+                        "2-4f25-8a98-424df05362dd";
+                    this.mUIUtif_banner1_homepagFrame.FilterProperties[HtmlFrame.PropertyNames.AbsolutePath] = null;
+                    this.mUIUtif_banner1_homepagFrame.FilterProperties[HtmlFrame.PropertyNames.PageUrl] = null;
+                    this.mUIUtif_banner1_homepagFrame.FilterProperties[HtmlFrame.PropertyNames.Title] = null;
+                    this.mUIUtif_banner1_homepagFrame.FilterProperties[HtmlFrame.PropertyNames.Class] = null;
+                    this.mUIUtif_banner1_homepagFrame.FilterProperties[HtmlFrame.PropertyNames.ControlDefinition] = "name=\"utif_banner1_homepage_container_df";
+                    this.mUIUtif_banner1_homepagFrame.FilterProperties[HtmlFrame.PropertyNames.TagInstance] = "2";
+                    this.mUIUtif_banner1_homepagFrame.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIUtif_banner1_homepagFrame;
+            }
+        }
+        
+        public UIMainCustom UIMainCustom
+        {
+            get
+            {
+                if ((this.mUIMainCustom == null))
+                {
+                    this.mUIMainCustom = new UIMainCustom(this);
+                }
+                return this.mUIMainCustom;
+            }
+        }
+        
+        public HtmlDiv UIBanner1_homepage_02dPane
+        {
+            get
+            {
+                if ((this.mUIBanner1_homepage_02dPane == null))
+                {
+                    this.mUIBanner1_homepage_02dPane = new HtmlDiv(this);
+                    #region Search Criteria
+                    this.mUIBanner1_homepage_02dPane.SearchProperties[HtmlDiv.PropertyNames.Id] = "banner1_homepage_02d5ea88-a2b5-4ac6-9560-7c3f4dc041b8";
+                    this.mUIBanner1_homepage_02dPane.SearchProperties[HtmlDiv.PropertyNames.Name] = null;
+                    this.mUIBanner1_homepage_02dPane.FilterProperties[HtmlDiv.PropertyNames.InnerText] = "require([\"dap\"], function (dap) { dap(\"&";
+                    this.mUIBanner1_homepage_02dPane.FilterProperties[HtmlDiv.PropertyNames.Title] = null;
+                    this.mUIBanner1_homepage_02dPane.FilterProperties[HtmlDiv.PropertyNames.Class] = "widead non-empty-ad";
+                    this.mUIBanner1_homepage_02dPane.FilterProperties[HtmlDiv.PropertyNames.ControlDefinition] = "tabindex=\"-1\" class=\"widead non-empty-ad\" id=\"banner1_homepage_02d5ea88-a2b5-4ac6" +
+                        "-9560-7c3f4dc041b8\" aria-hidden=\"true\" style=\"visibility: visible;\" data-m=\'{\"i\"" +
+                        ":66,\"p\":16,\"n\":\"topTakeoverAd.ad\",\"t\":\"ad\",\"o\":2}\' data-id=\"66\" data-aop=\"toptak" +
+                        "eoverad.ad_ad\"";
+                    this.mUIBanner1_homepage_02dPane.FilterProperties[HtmlDiv.PropertyNames.TagInstance] = "57";
+                    this.mUIBanner1_homepage_02dPane.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIBanner1_homepage_02dPane;
+            }
+        }
+        
+        public HtmlCustom UIHeadercommonCustom
+        {
+            get
+            {
+                if ((this.mUIHeadercommonCustom == null))
+                {
+                    this.mUIHeadercommonCustom = new HtmlCustom(this);
+                    #region Search Criteria
+                    this.mUIHeadercommonCustom.SearchProperties["TagName"] = "HEADER";
+                    this.mUIHeadercommonCustom.SearchProperties["Id"] = "header-common";
+                    this.mUIHeadercommonCustom.SearchProperties[UITestControl.PropertyNames.Name] = null;
+                    this.mUIHeadercommonCustom.FilterProperties["Class"] = "no-overlay";
+                    this.mUIHeadercommonCustom.FilterProperties["ControlDefinition"] = "class=\"no-overlay\" id=\"header-common\" ro";
+                    this.mUIHeadercommonCustom.FilterProperties["TagInstance"] = "1";
+                    this.mUIHeadercommonCustom.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIHeadercommonCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlEdit mUIQEdit;
+        
+        private HtmlIFrame mUIUtif_banner1_homepagFrame;
+        
+        private UIMainCustom mUIMainCustom;
+        
+        private HtmlDiv mUIBanner1_homepage_02dPane;
+        
+        private HtmlCustom mUIHeadercommonCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIMainCustom : HtmlCustom
+    {
+        
+        public UIMainCustom(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties["TagName"] = "main";
+            this.SearchProperties["Id"] = "main";
+            this.SearchProperties[UITestControl.PropertyNames.Name] = null;
+            this.FilterProperties["Class"] = null;
+            this.FilterProperties["ControlDefinition"] = "id=\"main\" role=\"main\" data-m=\'{\"i\":16,\"n";
+            this.FilterProperties["TagInstance"] = "1";
+            this.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                    "ve");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UIFacebookHyperlink
+        {
+            get
+            {
+                if ((this.mUIFacebookHyperlink == null))
+                {
+                    this.mUIFacebookHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIFacebookHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIFacebookHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIFacebookHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = "_blank";
+                    this.mUIFacebookHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Facebook";
+                    this.mUIFacebookHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/";
+                    this.mUIFacebookHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIFacebookHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://www.facebook.com/";
+                    this.mUIFacebookHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIFacebookHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"http://www.facebook.com/\" target=\"";
+                    this.mUIFacebookHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "3";
+                    this.mUIFacebookHyperlink.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIFacebookHyperlink;
+            }
+        }
+        
+        public HtmlHyperlink UIOfficeHyperlink
+        {
+            get
+            {
+                if ((this.mUIOfficeHyperlink == null))
+                {
+                    this.mUIOfficeHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIOfficeHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIOfficeHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIOfficeHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = "_blank";
+                    this.mUIOfficeHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Office";
+                    this.mUIOfficeHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/click";
+                    this.mUIOfficeHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIOfficeHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://clk.tradedoubler.com/click?p=270365&a=2811327&epi=PRIME_PLPL_HP_ME_OFFICE&" +
+                        "url=https://www.office.com/?omkt=pl-pl%26WT.mc_id=MSN_site";
+                    this.mUIOfficeHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIOfficeHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"//clk.tradedoubler.com/click?p=270";
+                    this.mUIOfficeHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "5";
+                    this.mUIOfficeHyperlink.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIOfficeHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUIFacebookHyperlink;
+        
+        private HtmlHyperlink mUIOfficeHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIInfugeduBingDocument : HtmlDocument
+    {
+        
+        public UIInfugeduBingDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "inf ug edu - Bing";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/search";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "https://www.bing.com/search?q=inf+ug+edu&form=PRPLPL&pc=EUPP_&httpsmsn=1&refig=4f" +
+                "2bf84222d04b3cb1fece5566b51d8a&pq=inf+ug+edu&sc=4-10&sp=-1&qs=n&sk=";
+            this.WindowTitles.Add("inf ug edu - Bing");
+            #endregion
+        }
+        
+        #region Properties
+        public UIB_resultsCustom UIB_resultsCustom
+        {
+            get
+            {
+                if ((this.mUIB_resultsCustom == null))
+                {
+                    this.mUIB_resultsCustom = new UIB_resultsCustom(this);
+                }
+                return this.mUIB_resultsCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIB_resultsCustom mUIB_resultsCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIB_resultsCustom : HtmlCustom
+    {
+        
+        public UIB_resultsCustom(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties["TagName"] = "OL";
+            this.SearchProperties["Id"] = "b_results";
+            this.SearchProperties[UITestControl.PropertyNames.Name] = null;
+            this.FilterProperties["Class"] = null;
+            this.FilterProperties["ControlDefinition"] = "id=\"b_results\" role=\"main\" aria-label=\"W";
+            this.FilterProperties["TagInstance"] = "1";
+            this.WindowTitles.Add("inf ug edu - Bing");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UIWydarzeniaInstytutInHyperlink
+        {
+            get
+            {
+                if ((this.mUIWydarzeniaInstytutInHyperlink == null))
+                {
+                    this.mUIWydarzeniaInstytutInHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIWydarzeniaInstytutInHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIWydarzeniaInstytutInHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIWydarzeniaInstytutInHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIWydarzeniaInstytutInHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Wydarzenia∴Instytut Informatyki UG";
+                    this.mUIWydarzeniaInstytutInHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/";
+                    this.mUIWydarzeniaInstytutInHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIWydarzeniaInstytutInHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "https://inf.ug.edu.pl/";
+                    this.mUIWydarzeniaInstytutInHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIWydarzeniaInstytutInHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"https://inf.ug.edu.pl/\" h=\"ID=SERP";
+                    this.mUIWydarzeniaInstytutInHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "1";
+                    this.mUIWydarzeniaInstytutInHyperlink.WindowTitles.Add("inf ug edu - Bing");
+                    #endregion
+                }
+                return this.mUIWydarzeniaInstytutInHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUIWydarzeniaInstytutInHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIWydarzeniaInstytutInDocument : HtmlDocument
+    {
+        
+        public UIWydarzeniaInstytutInDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Wydarzenia∴Instytut Informatyki UG";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "https://inf.ug.edu.pl/";
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG");
+            #endregion
+        }
+        
+        #region Properties
+        public UIMenuBoxPane UIMenuBoxPane
+        {
+            get
+            {
+                if ((this.mUIMenuBoxPane == null))
+                {
+                    this.mUIMenuBoxPane = new UIMenuBoxPane(this);
+                }
+                return this.mUIMenuBoxPane;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIMenuBoxPane mUIMenuBoxPane;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIMenuBoxPane : HtmlDiv
+    {
+        
+        public UIMenuBoxPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDiv.PropertyNames.Id] = "menuBox";
+            this.SearchProperties[HtmlDiv.PropertyNames.Name] = null;
+            this.FilterProperties[HtmlDiv.PropertyNames.InnerText] = "Studia\r\n Rekrutacja\r\n Stacjonarne\r\n Nies";
+            this.FilterProperties[HtmlDiv.PropertyNames.Title] = null;
+            this.FilterProperties[HtmlDiv.PropertyNames.Class] = null;
+            this.FilterProperties[HtmlDiv.PropertyNames.ControlDefinition] = "id=\"menuBox\"";
+            this.FilterProperties[HtmlDiv.PropertyNames.TagInstance] = "8";
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UIPocztaHyperlink
+        {
+            get
+            {
+                if ((this.mUIPocztaHyperlink == null))
+                {
+                    this.mUIPocztaHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIPocztaHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIPocztaHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIPocztaHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIPocztaHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Poczta";
+                    this.mUIPocztaHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/sq";
+                    this.mUIPocztaHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIPocztaHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "https://inf.ug.edu.pl/sq";
+                    this.mUIPocztaHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIPocztaHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"https://inf.ug.edu.pl/sq\"";
+                    this.mUIPocztaHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "13";
+                    this.mUIPocztaHyperlink.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG");
+                    #endregion
+                }
+                return this.mUIPocztaHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUIPocztaHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIPocztainfugeduplLogoDocument : HtmlDocument
+    {
+        
+        public UIPocztainfugeduplLogoDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Poczta inf.ug.edu.pl - Logowanie";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/sq/src/login.php";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "https://inf.ug.edu.pl/sq/src/login.php";
+            this.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlEdit UILogin_usernameEdit
+        {
+            get
+            {
+                if ((this.mUILogin_usernameEdit == null))
+                {
+                    this.mUILogin_usernameEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUILogin_usernameEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "login_username";
+                    this.mUILogin_usernameEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "login_username";
+                    this.mUILogin_usernameEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = null;
+                    this.mUILogin_usernameEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUILogin_usernameEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUILogin_usernameEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = null;
+                    this.mUILogin_usernameEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"login_username\" id=\"login_username";
+                    this.mUILogin_usernameEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "1";
+                    this.mUILogin_usernameEdit.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie");
+                    #endregion
+                }
+                return this.mUILogin_usernameEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlEdit mUILogin_usernameEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIWitamynaFacebookuZalDocument : HtmlDocument
+    {
+        
+        public UIWitamynaFacebookuZalDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "https://www.facebook.com/";
+            this.WindowTitles.Add("Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlEdit UIFirstnameEdit
+        {
+            get
+            {
+                if ((this.mUIFirstnameEdit == null))
+                {
+                    this.mUIFirstnameEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUIFirstnameEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "u_0_1";
+                    this.mUIFirstnameEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "firstname";
+                    this.mUIFirstnameEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = null;
+                    this.mUIFirstnameEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUIFirstnameEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUIFirstnameEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "inputtext _58mg _5dba _2ph-";
+                    this.mUIFirstnameEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"firstname\" class=\"inputtext _58mg ";
+                    this.mUIFirstnameEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "14";
+                    this.mUIFirstnameEdit.WindowTitles.Add("Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej");
+                    #endregion
+                }
+                return this.mUIFirstnameEdit;
+            }
+        }
+        
+        public HtmlEdit UILastnameEdit
+        {
+            get
+            {
+                if ((this.mUILastnameEdit == null))
+                {
+                    this.mUILastnameEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUILastnameEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "u_0_3";
+                    this.mUILastnameEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "lastname";
+                    this.mUILastnameEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = null;
+                    this.mUILastnameEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUILastnameEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUILastnameEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "inputtext _58mg _5dba _2ph-";
+                    this.mUILastnameEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"lastname\" class=\"inputtext _58mg _";
+                    this.mUILastnameEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "15";
+                    this.mUILastnameEdit.WindowTitles.Add("Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej");
+                    #endregion
+                }
+                return this.mUILastnameEdit;
+            }
+        }
+        
+        public HtmlEdit UIReg_email__Edit
+        {
+            get
+            {
+                if ((this.mUIReg_email__Edit == null))
+                {
+                    this.mUIReg_email__Edit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUIReg_email__Edit.SearchProperties[HtmlEdit.PropertyNames.Id] = "u_0_6";
+                    this.mUIReg_email__Edit.SearchProperties[HtmlEdit.PropertyNames.Name] = "reg_email__";
+                    this.mUIReg_email__Edit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = null;
+                    this.mUIReg_email__Edit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUIReg_email__Edit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUIReg_email__Edit.FilterProperties[HtmlEdit.PropertyNames.Class] = "inputtext _58mg _5dba _2ph-";
+                    this.mUIReg_email__Edit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"reg_email__\" class=\"inputtext _58m";
+                    this.mUIReg_email__Edit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "16";
+                    this.mUIReg_email__Edit.WindowTitles.Add("Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej");
+                    #endregion
+                }
+                return this.mUIReg_email__Edit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlEdit mUIFirstnameEdit;
+        
+        private HtmlEdit mUILastnameEdit;
+        
+        private HtmlEdit mUIReg_email__Edit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIXDBingDocument : HtmlDocument
+    {
+        
+        public UIXDBingDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "XD - Bing";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/search";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "https://www.bing.com/search?q=XD&form=PRPLPL&pc=EUPP_&httpsmsn=1&refig=917c02f2cd" +
+                "6f4a9cb6bce621774f7941&pq=xd&sc=8-2&sp=-1&qs=n&sk=";
+            this.WindowTitles.Add("XD - Bing");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlDiv UIB_contentPane
+        {
+            get
+            {
+                if ((this.mUIB_contentPane == null))
+                {
+                    this.mUIB_contentPane = new HtmlDiv(this);
+                    #region Search Criteria
+                    this.mUIB_contentPane.SearchProperties[HtmlDiv.PropertyNames.Id] = "b_content";
+                    this.mUIB_contentPane.SearchProperties[HtmlDiv.PropertyNames.Name] = null;
+                    this.mUIB_contentPane.FilterProperties[HtmlDiv.PropertyNames.InnerText] = "wyniki: 18 200 000Data \r\n\r\n\r\nWszystkie\r\n";
+                    this.mUIB_contentPane.FilterProperties[HtmlDiv.PropertyNames.Title] = null;
+                    this.mUIB_contentPane.FilterProperties[HtmlDiv.PropertyNames.Class] = null;
+                    this.mUIB_contentPane.FilterProperties[HtmlDiv.PropertyNames.ControlDefinition] = "id=\"b_content\"";
+                    this.mUIB_contentPane.FilterProperties[HtmlDiv.PropertyNames.TagInstance] = "6";
+                    this.mUIB_contentPane.WindowTitles.Add("XD - Bing");
+                    #endregion
+                }
+                return this.mUIB_contentPane;
+            }
+        }
+        
+        public UIB_resultsCustom1 UIB_resultsCustom
+        {
+            get
+            {
+                if ((this.mUIB_resultsCustom == null))
+                {
+                    this.mUIB_resultsCustom = new UIB_resultsCustom1(this);
+                }
+                return this.mUIB_resultsCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlDiv mUIB_contentPane;
+        
+        private UIB_resultsCustom1 mUIB_resultsCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIB_resultsCustom1 : HtmlCustom
+    {
+        
+        public UIB_resultsCustom1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties["TagName"] = "OL";
+            this.SearchProperties["Id"] = "b_results";
+            this.SearchProperties[UITestControl.PropertyNames.Name] = null;
+            this.FilterProperties["Class"] = null;
+            this.FilterProperties["ControlDefinition"] = "id=\"b_results\" role=\"main\" aria-label=\"W";
+            this.FilterProperties["TagInstance"] = "1";
+            this.WindowTitles.Add("XD - Bing");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UIDisneyXDOficjalnastrHyperlink
+        {
+            get
+            {
+                if ((this.mUIDisneyXDOficjalnastrHyperlink == null))
+                {
+                    this.mUIDisneyXDOficjalnastrHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIDisneyXDOficjalnastrHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIDisneyXDOficjalnastrHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIDisneyXDOficjalnastrHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIDisneyXDOficjalnastrHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Disney XD - Oficjalna strona Disney XD w Polsce";
+                    this.mUIDisneyXDOficjalnastrHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/";
+                    this.mUIDisneyXDOficjalnastrHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIDisneyXDOficjalnastrHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://disneyxd.disney.pl/";
+                    this.mUIDisneyXDOficjalnastrHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIDisneyXDOficjalnastrHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"http://disneyxd.disney.pl/\" h=\"ID=";
+                    this.mUIDisneyXDOficjalnastrHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "1";
+                    this.mUIDisneyXDOficjalnastrHyperlink.WindowTitles.Add("XD - Bing");
+                    #endregion
+                }
+                return this.mUIDisneyXDOficjalnastrHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUIDisneyXDOficjalnastrHyperlink;
         #endregion
     }
     
@@ -1684,6 +3106,7 @@ namespace CodedUITests
         {
             #region Search Criteria
             this.WindowTitles.Add("Create - GamesStudios - Mozilla Firefox");
+            this.WindowTitles.Add("Strona startowa programu Mozilla Firefox - Mozilla Firefox");
             #endregion
         }
         
@@ -1702,10 +3125,594 @@ namespace CodedUITests
                 return this.mUICodedUITestCodedUITeListItem;
             }
         }
+        
+        public WinListItem UIUGoogleWyszukiwanieListItem
+        {
+            get
+            {
+                if ((this.mUIUGoogleWyszukiwanieListItem == null))
+                {
+                    this.mUIUGoogleWyszukiwanieListItem = new WinListItem(this);
+                    #region Search Criteria
+                    this.mUIUGoogleWyszukiwanieListItem.SearchProperties[WinListItem.PropertyNames.Name] = "U Google Wyszukiwanie";
+                    #endregion
+                }
+                return this.mUIUGoogleWyszukiwanieListItem;
+            }
+        }
         #endregion
         
         #region Fields
         private WinListItem mUICodedUITestCodedUITeListItem;
+        
+        private WinListItem mUIUGoogleWyszukiwanieListItem;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UISearchWindowsWindow : WinWindow
+    {
+        
+        public UISearchWindowsWindow()
+        {
+            #region Search Criteria
+            this.SearchProperties[WinWindow.PropertyNames.Name] = "Search Windows";
+            this.SearchProperties[WinWindow.PropertyNames.ClassName] = "TrayButton";
+            this.WindowTitles.Add("Search Windows");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UISearchWindowsButton
+        {
+            get
+            {
+                if ((this.mUISearchWindowsButton == null))
+                {
+                    this.mUISearchWindowsButton = new WinButton(this);
+                    #region Search Criteria
+                    this.mUISearchWindowsButton.SearchProperties[WinButton.PropertyNames.Name] = "Search Windows";
+                    this.mUISearchWindowsButton.WindowTitles.Add("Search Windows");
+                    #endregion
+                }
+                return this.mUISearchWindowsButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUISearchWindowsButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIAktualizacjaaplikacjWindow : WinWindow
+    {
+        
+        public UIAktualizacjaaplikacjWindow()
+        {
+            #region Search Criteria
+            this.SearchProperties[WinWindow.PropertyNames.Name] = "Aktualizacja aplikacji";
+            this.SearchProperties[WinWindow.PropertyNames.ClassName] = "MozillaWindowClass";
+            this.WindowTitles.Add("Aktualizacja aplikacji");
+            #endregion
+        }
+        
+        #region Properties
+        public UIAktualizacjaaplikacjTitleBar UIAktualizacjaaplikacjTitleBar
+        {
+            get
+            {
+                if ((this.mUIAktualizacjaaplikacjTitleBar == null))
+                {
+                    this.mUIAktualizacjaaplikacjTitleBar = new UIAktualizacjaaplikacjTitleBar(this);
+                }
+                return this.mUIAktualizacjaaplikacjTitleBar;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIAktualizacjaaplikacjTitleBar mUIAktualizacjaaplikacjTitleBar;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIAktualizacjaaplikacjTitleBar : WinTitleBar
+    {
+        
+        public UIAktualizacjaaplikacjTitleBar(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.WindowTitles.Add("Aktualizacja aplikacji");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UICloseButton
+        {
+            get
+            {
+                if ((this.mUICloseButton == null))
+                {
+                    this.mUICloseButton = new WinButton(this);
+                    #region Search Criteria
+                    this.mUICloseButton.SearchProperties[WinButton.PropertyNames.Name] = "Close";
+                    this.mUICloseButton.WindowTitles.Add("Aktualizacja aplikacji");
+                    #endregion
+                }
+                return this.mUICloseButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUICloseButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIProgramManagerWindow : WinWindow
+    {
+        
+        public UIProgramManagerWindow()
+        {
+            #region Search Criteria
+            this.SearchProperties[WinWindow.PropertyNames.Name] = "Program Manager";
+            this.SearchProperties[WinWindow.PropertyNames.ClassName] = "Progman";
+            this.WindowTitles.Add("Program Manager");
+            #endregion
+        }
+        
+        #region Properties
+        public UIDesktopList UIDesktopList
+        {
+            get
+            {
+                if ((this.mUIDesktopList == null))
+                {
+                    this.mUIDesktopList = new UIDesktopList(this);
+                }
+                return this.mUIDesktopList;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIDesktopList mUIDesktopList;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIDesktopList : WinList
+    {
+        
+        public UIDesktopList(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinList.PropertyNames.Name] = "Desktop";
+            this.WindowTitles.Add("Program Manager");
+            #endregion
+        }
+        
+        #region Properties
+        public WinListItem UIMozillaFirefoxListItem
+        {
+            get
+            {
+                if ((this.mUIMozillaFirefoxListItem == null))
+                {
+                    this.mUIMozillaFirefoxListItem = new WinListItem(this);
+                    #region Search Criteria
+                    this.mUIMozillaFirefoxListItem.SearchProperties[WinListItem.PropertyNames.Name] = "Mozilla Firefox";
+                    this.mUIMozillaFirefoxListItem.WindowTitles.Add("Program Manager");
+                    #endregion
+                }
+                return this.mUIMozillaFirefoxListItem;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinListItem mUIMozillaFirefoxListItem;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIStronastartowaprograWindow : WinWindow
+    {
+        
+        public UIStronastartowaprograWindow()
+        {
+            #region Search Criteria
+            this.SearchProperties[WinWindow.PropertyNames.Name] = "Strona startowa programu Mozilla Firefox - Mozilla Firefox";
+            this.SearchProperties[WinWindow.PropertyNames.ClassName] = "MozillaWindowClass";
+            this.WindowTitles.Add("Strona startowa programu Mozilla Firefox - Mozilla Firefox");
+            this.WindowTitles.Add("CODEDUI - Google Search - Mozilla Firefox");
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG - Mozilla Firefox");
+            this.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie - Mozilla Firefox");
+            this.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+            this.WindowTitles.Add("Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public UIPaseknarzędzinawigacToolBar1 UIPaseknarzędzinawigacToolBar
+        {
+            get
+            {
+                if ((this.mUIPaseknarzędzinawigacToolBar == null))
+                {
+                    this.mUIPaseknarzędzinawigacToolBar = new UIPaseknarzędzinawigacToolBar1(this);
+                }
+                return this.mUIPaseknarzędzinawigacToolBar;
+            }
+        }
+        
+        public UIItemComboBox1 UIItemComboBox
+        {
+            get
+            {
+                if ((this.mUIItemComboBox == null))
+                {
+                    this.mUIItemComboBox = new UIItemComboBox1(this);
+                }
+                return this.mUIItemComboBox;
+            }
+        }
+        
+        public UIPocztaHyperlink UIPocztaHyperlink
+        {
+            get
+            {
+                if ((this.mUIPocztaHyperlink == null))
+                {
+                    this.mUIPocztaHyperlink = new UIPocztaHyperlink(this);
+                }
+                return this.mUIPocztaHyperlink;
+            }
+        }
+        
+        public UIPlanzajęćHyperlink UIPlanzajęćHyperlink
+        {
+            get
+            {
+                if ((this.mUIPlanzajęćHyperlink == null))
+                {
+                    this.mUIPlanzajęćHyperlink = new UIPlanzajęćHyperlink(this);
+                }
+                return this.mUIPlanzajęćHyperlink;
+            }
+        }
+        
+        public UIMozillaFirefoxApplication UIMozillaFirefoxApplication
+        {
+            get
+            {
+                if ((this.mUIMozillaFirefoxApplication == null))
+                {
+                    this.mUIMozillaFirefoxApplication = new UIMozillaFirefoxApplication(this);
+                }
+                return this.mUIMozillaFirefoxApplication;
+            }
+        }
+        
+        public UIDlakierunkustudiówHyperlink UIDlakierunkustudiówHyperlink
+        {
+            get
+            {
+                if ((this.mUIDlakierunkustudiówHyperlink == null))
+                {
+                    this.mUIDlakierunkustudiówHyperlink = new UIDlakierunkustudiówHyperlink(this);
+                }
+                return this.mUIDlakierunkustudiówHyperlink;
+            }
+        }
+        
+        public UIInformatykaIIIrokHyperlink UIInformatykaIIIrokHyperlink
+        {
+            get
+            {
+                if ((this.mUIInformatykaIIIrokHyperlink == null))
+                {
+                    this.mUIInformatykaIIIrokHyperlink = new UIInformatykaIIIrokHyperlink(this);
+                }
+                return this.mUIInformatykaIIIrokHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIPaseknarzędzinawigacToolBar1 mUIPaseknarzędzinawigacToolBar;
+        
+        private UIItemComboBox1 mUIItemComboBox;
+        
+        private UIPocztaHyperlink mUIPocztaHyperlink;
+        
+        private UIPlanzajęćHyperlink mUIPlanzajęćHyperlink;
+        
+        private UIMozillaFirefoxApplication mUIMozillaFirefoxApplication;
+        
+        private UIDlakierunkustudiówHyperlink mUIDlakierunkustudiówHyperlink;
+        
+        private UIInformatykaIIIrokHyperlink mUIInformatykaIIIrokHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIPaseknarzędzinawigacToolBar1 : WinToolBar
+    {
+        
+        public UIPaseknarzędzinawigacToolBar1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinToolBar.PropertyNames.Name] = "Pasek narzędzi nawigacyjnych";
+            this.WindowTitles.Add("Strona startowa programu Mozilla Firefox - Mozilla Firefox");
+            this.WindowTitles.Add("CODEDUI - Google Search - Mozilla Firefox");
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG - Mozilla Firefox");
+            this.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie - Mozilla Firefox");
+            this.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinComboBox UIItemComboBox
+        {
+            get
+            {
+                if ((this.mUIItemComboBox == null))
+                {
+                    this.mUIItemComboBox = new WinComboBox(this);
+                    #region Search Criteria
+                    this.mUIItemComboBox.WindowTitles.Add("Strona startowa programu Mozilla Firefox - Mozilla Firefox");
+                    this.mUIItemComboBox.WindowTitles.Add("CODEDUI - Google Search - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIItemComboBox;
+            }
+        }
+        
+        public WinButton UIWsteczButton
+        {
+            get
+            {
+                if ((this.mUIWsteczButton == null))
+                {
+                    this.mUIWsteczButton = new WinButton(this);
+                    #region Search Criteria
+                    this.mUIWsteczButton.SearchProperties[WinButton.PropertyNames.Name] = "Wstecz";
+                    this.mUIWsteczButton.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIWsteczButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinComboBox mUIItemComboBox;
+        
+        private WinButton mUIWsteczButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIItemComboBox1 : WinComboBox
+    {
+        
+        public UIItemComboBox1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.WindowTitles.Add("Strona startowa programu Mozilla Firefox - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UIWprowadźadreslubszukEdit
+        {
+            get
+            {
+                if ((this.mUIWprowadźadreslubszukEdit == null))
+                {
+                    this.mUIWprowadźadreslubszukEdit = new WinEdit(this);
+                    #region Search Criteria
+                    this.mUIWprowadźadreslubszukEdit.SearchProperties[WinEdit.PropertyNames.Name] = "Wprowadź adres lub szukaj";
+                    this.mUIWprowadźadreslubszukEdit.WindowTitles.Add("Strona startowa programu Mozilla Firefox - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIWprowadźadreslubszukEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUIWprowadźadreslubszukEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIPocztaHyperlink : WinHyperlink
+    {
+        
+        public UIPocztaHyperlink(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinHyperlink.PropertyNames.Name] = "Poczta";
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UIPocztaEdit
+        {
+            get
+            {
+                if ((this.mUIPocztaEdit == null))
+                {
+                    this.mUIPocztaEdit = new WinEdit(this);
+                    #region Search Criteria
+                    this.mUIPocztaEdit.SearchProperties[WinEdit.PropertyNames.Name] = "Poczta";
+                    this.mUIPocztaEdit.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIPocztaEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUIPocztaEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIPlanzajęćHyperlink : WinHyperlink
+    {
+        
+        public UIPlanzajęćHyperlink(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinHyperlink.PropertyNames.Name] = "Plan zajęć";
+            this.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UIPlanzajęćEdit
+        {
+            get
+            {
+                if ((this.mUIPlanzajęćEdit == null))
+                {
+                    this.mUIPlanzajęćEdit = new WinEdit(this);
+                    #region Search Criteria
+                    this.mUIPlanzajęćEdit.SearchProperties[WinEdit.PropertyNames.Name] = "Plan zajęć";
+                    this.mUIPlanzajęćEdit.WindowTitles.Add("Wydarzenia∴Instytut Informatyki UG - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIPlanzajęćEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUIPlanzajęćEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIMozillaFirefoxApplication : WinControl
+    {
+        
+        public UIMozillaFirefoxApplication(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[UITestControl.PropertyNames.Name] = "Mozilla Firefox";
+            this.SearchProperties[UITestControl.PropertyNames.ControlType] = "Application";
+            this.WindowTitles.Add("Mozilla Firefox");
+            this.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinList UIItemList
+        {
+            get
+            {
+                if ((this.mUIItemList == null))
+                {
+                    this.mUIItemList = new WinList(this);
+                    #region Search Criteria
+                    this.mUIItemList.WindowTitles.Add("Mozilla Firefox");
+                    this.mUIItemList.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIItemList;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinList mUIItemList;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIDlakierunkustudiówHyperlink : WinHyperlink
+    {
+        
+        public UIDlakierunkustudiówHyperlink(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinHyperlink.PropertyNames.Name] = "dla kierunku studiów";
+            this.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UIDlakierunkustudiówEdit
+        {
+            get
+            {
+                if ((this.mUIDlakierunkustudiówEdit == null))
+                {
+                    this.mUIDlakierunkustudiówEdit = new WinEdit(this);
+                    #region Search Criteria
+                    this.mUIDlakierunkustudiówEdit.SearchProperties[WinEdit.PropertyNames.Name] = "dla kierunku studiów";
+                    this.mUIDlakierunkustudiówEdit.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIDlakierunkustudiówEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUIDlakierunkustudiówEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIInformatykaIIIrokHyperlink : WinHyperlink
+    {
+        
+        public UIInformatykaIIIrokHyperlink(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinHyperlink.PropertyNames.Name] = "informatyka: III rok";
+            this.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UIInformatykaIIIrokEdit
+        {
+            get
+            {
+                if ((this.mUIInformatykaIIIrokEdit == null))
+                {
+                    this.mUIInformatykaIIIrokEdit = new WinEdit(this);
+                    #region Search Criteria
+                    this.mUIInformatykaIIIrokEdit.SearchProperties[WinEdit.PropertyNames.Name] = "informatyka: III rok";
+                    this.mUIInformatykaIIIrokEdit.WindowTitles.Add("Plan zajęć - Mozilla Firefox");
+                    #endregion
+                }
+                return this.mUIInformatykaIIIrokEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUIInformatykaIIIrokEdit;
         #endregion
     }
 }
