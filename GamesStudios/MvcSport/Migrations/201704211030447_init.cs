@@ -14,8 +14,6 @@ namespace GamesStudios.Migrations
                         ID = c.Int(nullable: false, identity: true),
                         GenreID = c.Int(nullable: false),
                         Name = c.String(),
-                        Surname = c.String(),
-                        number_on_shirt = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Genre", t => t.GenreID, cascadeDelete: true)
@@ -27,7 +25,6 @@ namespace GamesStudios.Migrations
                     {
                         ID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        doc = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.ID);
             

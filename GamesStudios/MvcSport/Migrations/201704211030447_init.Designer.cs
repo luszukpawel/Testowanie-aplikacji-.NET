@@ -13,7 +13,7 @@ namespace GamesStudios.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201704191404269_init"; }
+            get { return "201704211030447_init"; }
         }
         
         string IMigrationMetadata.Source
