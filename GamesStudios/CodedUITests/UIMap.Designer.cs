@@ -588,6 +588,214 @@ namespace CodedUITests
             Mouse.Click(uIDisneyXDOficjalnastrHyperlink, new Point(290, 11));
         }
         
+        /// <summary>
+        /// AddNewGenre - Use 'AddNewGenreParams' to pass parameters into this method.
+        /// </summary>
+        public void AddNewGenre()
+        {
+            #region Variable Declarations
+            HtmlHyperlink uIGenresDatabaseHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIHomePageGamesStudiosDocument.UIGenresDatabaseHyperlink;
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument.UICreateNewHyperlink;
+            HtmlEdit uIGenreNameEdit = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument.UIGenreNameEdit;
+            HtmlInputButton uICreateButton = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument.UICreateButton;
+            #endregion
+
+            // Go to web page 'http://localhost:59145/' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.AddNewGenreParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Click 'Genre's Database' link
+            Mouse.Click(uIGenresDatabaseHyperlink, new Point(75, 27));
+
+            // Click 'Create New' link
+            Mouse.Click(uICreateNewHyperlink, new Point(26, 9));
+
+            // Type 'codeduitest1' in 'Genre Name' text box
+            uIGenreNameEdit.Text = this.AddNewGenreParams.UIGenreNameEditText;
+
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(30, 21));
+
+            // Type 'codeduitest' in 'Genre Name' text box
+            uIGenreNameEdit.Text = this.AddNewGenreParams.UIGenreNameEditText1;
+
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(46, 15));
+        }
+        
+        /// <summary>
+        /// CodedUIAddNewGame - Use 'CodedUIAddNewGameParams' to pass parameters into this method.
+        /// </summary>
+        public void CodedUIAddNewGame()
+        {
+            #region Variable Declarations
+            HtmlHyperlink uIOutlookcomHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIMainCustom.UIOutlookcomHyperlink;
+            HtmlHyperlink uISklepHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIMainCustom.UISklepHyperlink;
+            HtmlCustom uIHeadercommonCustom = this.UIMSNPolskaOutlookSkypWindow.UIMSNPolskaOutlookSkypDocument.UIHeadercommonCustom;
+            BrowserWindow uIMSNPolskaOutlookSkypWindow = this.UIMSNPolskaOutlookSkypWindow;
+            HtmlHyperlink uIGamesDatabaseHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIHomePageGamesStudiosDocument.UIGamesDatabaseHyperlink;
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink;
+            HtmlEdit uITitleEdit = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UITitleEdit;
+            HtmlInputButton uICreateButton = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UICreateButton;
+            #endregion
+
+            // Go to web page 'http://go.microsoft.com/fwlink/p/?LinkId=255141' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.CodedUIAddNewGameParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Set flag to allow play back to continue if non-essential actions fail. (For example, if a mouse hover action fails.)
+            Playback.PlaybackSettings.ContinueOnError = true;
+
+            // Mouse hover 'Outlook.com' link at (1, 1)
+            Mouse.Hover(uIOutlookcomHyperlink, new Point(1, 1));
+
+            // Mouse hover 'Sklep' link at (1, 1)
+            Mouse.Hover(uISklepHyperlink, new Point(1, 1));
+
+            // Mouse hover 'header-common' custom control at (1, 1)
+            Mouse.Hover(uIHeadercommonCustom, new Point(1, 1));
+
+            // Reset flag to ensure that play back stops if there is an error.
+            Playback.PlaybackSettings.ContinueOnError = false;
+
+            // Go to web page 'http://localhost:59145/'
+            uIMSNPolskaOutlookSkypWindow.NavigateToUrl(new System.Uri(this.CodedUIAddNewGameParams.UIMSNPolskaOutlookSkypWindowUrl1));
+
+            // Click 'Game's Database' link
+            Mouse.Click(uIGamesDatabaseHyperlink, new Point(52, 25));
+
+            // Click 'Create New' link
+            Mouse.Click(uICreateNewHyperlink, new Point(44, 9));
+
+            // Type 'codedUItest2' in 'Title' text box
+            uITitleEdit.Text = this.CodedUIAddNewGameParams.UITitleEditText;
+
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(50, 22));
+        }
+        
+        /// <summary>
+        /// CodedUiDeleteGame - Use 'CodedUiDeleteGameParams' to pass parameters into this method.
+        /// </summary>
+        public void CodedUiDeleteGame()
+        {
+            #region Variable Declarations
+            HtmlHyperlink uIGamesDatabaseHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIHomePageGamesStudiosDocument.UIGamesDatabaseHyperlink;
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink;
+            HtmlEdit uITitleEdit = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UITitleEdit;
+            HtmlInputButton uICreateButton = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UICreateButton;
+            HtmlHyperlink uIDeleteHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UIDeleteHyperlink;
+            HtmlInputButton uIDeleteButton = this.UIMSNPolskaOutlookSkypWindow.UIDeleteGamesStudiosDocument.UIDeleteButton;
+            #endregion
+
+            // Go to web page 'http://localhost:59145/' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.CodedUiDeleteGameParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Click 'Game's Database' link
+            Mouse.Click(uIGamesDatabaseHyperlink, new Point(110, 16));
+
+            // Click 'Create New' link
+            Mouse.Click(uICreateNewHyperlink, new Point(39, 9));
+
+            // Type 'GameToDelete' in 'Title' text box
+            uITitleEdit.Text = this.CodedUiDeleteGameParams.UITitleEditText;
+
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(20, 27));
+
+            // Click 'Delete' link
+            Mouse.Click(uIDeleteHyperlink, new Point(20, 9));
+
+            // Click 'Delete' button
+            Mouse.Click(uIDeleteButton, new Point(21, 15));
+        }
+        
+        /// <summary>
+        /// CodedUiUpdeteGame - Use 'CodedUiUpdeteGameParams' to pass parameters into this method.
+        /// </summary>
+        public void CodedUiUpdeteGame()
+        {
+            #region Variable Declarations
+            HtmlHyperlink uIGamesDatabaseHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIHomePageGamesStudiosDocument.UIGamesDatabaseHyperlink;
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink;
+            HtmlEdit uITitleEdit = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UITitleEdit;
+            HtmlComboBox uIGenreComboBox = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UIGenreComboBox;
+            HtmlInputButton uICreateButton = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UICreateButton;
+            HtmlHyperlink uIEditHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UIEditHyperlink;
+            HtmlEdit uITitleEdit1 = this.UIMSNPolskaOutlookSkypWindow.UIEditGamesStudiosDocument.UITitleEdit;
+            HtmlInputButton uISaveButton = this.UIMSNPolskaOutlookSkypWindow.UIEditGamesStudiosDocument.UISaveButton;
+            #endregion
+
+            // Go to web page 'http://localhost:59145/' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.CodedUiUpdeteGameParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Click 'Game's Database' link
+            Mouse.Click(uIGamesDatabaseHyperlink, new Point(77, 25));
+
+            // Click 'Create New' link
+            Mouse.Click(uICreateNewHyperlink, new Point(47, 12));
+
+            // Type 'GameToUpdate' in 'Title' text box
+            uITitleEdit.Text = this.CodedUiUpdeteGameParams.UITitleEditText;
+
+            // Select 'codeduitest' in 'Genre' combo box
+            uIGenreComboBox.SelectedItem = this.CodedUiUpdeteGameParams.UIGenreComboBoxSelectedItem;
+
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(45, 20));
+
+            // Click 'Edit' link
+            Mouse.Click(uIEditHyperlink, new Point(17, 9));
+
+            // Type 'GameAfterUpdate' in 'Title' text box
+            uITitleEdit1.Text = this.CodedUiUpdeteGameParams.UITitleEditText1;
+
+            // Click 'Save' button
+            Mouse.Click(uISaveButton, new Point(38, 20));
+        }
+        
+        /// <summary>
+        /// CodedUiDeleteGenre - Use 'CodedUiDeleteGenreParams' to pass parameters into this method.
+        /// </summary>
+        public void CodedUiDeleteGenre()
+        {
+            #region Variable Declarations
+            HtmlHyperlink uIGamesDatabaseHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIHomePageGamesStudiosDocument.UIGamesDatabaseHyperlink;
+            HtmlHyperlink uIGenresDatabaseHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UIGenresDatabaseHyperlink;
+            HtmlDiv uIIndexCreateNewGenreNPane = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument.UIIndexCreateNewGenreNPane;
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument.UICreateNewHyperlink;
+            HtmlEdit uIGenreNameEdit = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument.UIGenreNameEdit;
+            HtmlInputButton uICreateButton = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument.UICreateButton;
+            HtmlHyperlink uIDeleteHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument.UIDeleteHyperlink;
+            HtmlInputButton uIDeleteButton = this.UIMSNPolskaOutlookSkypWindow.UIDeleteGamesStudiosDocument1.UIDeleteButton;
+            #endregion
+
+            // Go to web page 'http://localhost:59145/' using new browser instance
+            this.UIMSNPolskaOutlookSkypWindow.LaunchUrl(new System.Uri(this.CodedUiDeleteGenreParams.UIMSNPolskaOutlookSkypWindowUrl));
+
+            // Click 'Game's Database' link
+            Mouse.Click(uIGamesDatabaseHyperlink, new Point(66, 18));
+
+            // Click 'Genre's Database' link
+            Mouse.Click(uIGenresDatabaseHyperlink, new Point(56, 19));
+
+            // Click 'Index Create New Genre Name' pane
+            Mouse.Click(uIIndexCreateNewGenreNPane, new Point(34, 76));
+
+            // Click 'Create New' link
+            Mouse.Click(uICreateNewHyperlink, new Point(21, 6));
+
+            // Type 'GenreToDelete' in 'Genre Name' text box
+            uIGenreNameEdit.Text = this.CodedUiDeleteGenreParams.UIGenreNameEditText;
+
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(49, 24));
+
+            // Click 'Delete' link
+            Mouse.Click(uIDeleteHyperlink, new Point(14, 9));
+
+            // Click 'Delete' button
+            Mouse.Click(uIDeleteButton, new Point(15, 12));
+        }
+        
         #region Properties
         public virtual OpenInternetExplorerParams OpenInternetExplorerParams
         {
@@ -769,6 +977,66 @@ namespace CodedUITests
             }
         }
         
+        public virtual AddNewGenreParams AddNewGenreParams
+        {
+            get
+            {
+                if ((this.mAddNewGenreParams == null))
+                {
+                    this.mAddNewGenreParams = new AddNewGenreParams();
+                }
+                return this.mAddNewGenreParams;
+            }
+        }
+        
+        public virtual CodedUIAddNewGameParams CodedUIAddNewGameParams
+        {
+            get
+            {
+                if ((this.mCodedUIAddNewGameParams == null))
+                {
+                    this.mCodedUIAddNewGameParams = new CodedUIAddNewGameParams();
+                }
+                return this.mCodedUIAddNewGameParams;
+            }
+        }
+        
+        public virtual CodedUiDeleteGameParams CodedUiDeleteGameParams
+        {
+            get
+            {
+                if ((this.mCodedUiDeleteGameParams == null))
+                {
+                    this.mCodedUiDeleteGameParams = new CodedUiDeleteGameParams();
+                }
+                return this.mCodedUiDeleteGameParams;
+            }
+        }
+        
+        public virtual CodedUiUpdeteGameParams CodedUiUpdeteGameParams
+        {
+            get
+            {
+                if ((this.mCodedUiUpdeteGameParams == null))
+                {
+                    this.mCodedUiUpdeteGameParams = new CodedUiUpdeteGameParams();
+                }
+                return this.mCodedUiUpdeteGameParams;
+            }
+        }
+        
+        public virtual CodedUiDeleteGenreParams CodedUiDeleteGenreParams
+        {
+            get
+            {
+                if ((this.mCodedUiDeleteGenreParams == null))
+                {
+                    this.mCodedUiDeleteGenreParams = new CodedUiDeleteGenreParams();
+                }
+                return this.mCodedUiDeleteGenreParams;
+            }
+        }
+        
         public UIMSNPolskaOutlookSkypWindow UIMSNPolskaOutlookSkypWindow
         {
             get
@@ -932,6 +1200,16 @@ namespace CodedUITests
         private ExplorerTestParams mExplorerTestParams;
         
         private ASDXDParams mASDXDParams;
+        
+        private AddNewGenreParams mAddNewGenreParams;
+        
+        private CodedUIAddNewGameParams mCodedUIAddNewGameParams;
+        
+        private CodedUiDeleteGameParams mCodedUiDeleteGameParams;
+        
+        private CodedUiUpdeteGameParams mCodedUiUpdeteGameParams;
+        
+        private CodedUiDeleteGenreParams mCodedUiDeleteGenreParams;
         
         private UIMSNPolskaOutlookSkypWindow mUIMSNPolskaOutlookSkypWindow;
         
@@ -1339,6 +1617,126 @@ namespace CodedUITests
         #endregion
     }
     
+    /// <summary>
+    /// Parameters to be passed into 'AddNewGenre'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AddNewGenreParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://localhost:59145/' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://localhost:59145/";
+        
+        /// <summary>
+        /// Type 'codeduitest1' in 'Genre Name' text box
+        /// </summary>
+        public string UIGenreNameEditText = "codeduitest1";
+        
+        /// <summary>
+        /// Type 'codeduitest' in 'Genre Name' text box
+        /// </summary>
+        public string UIGenreNameEditText1 = "codeduitest";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'CodedUIAddNewGame'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class CodedUIAddNewGameParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://go.microsoft.com/fwlink/p/?LinkId=255141' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://go.microsoft.com/fwlink/p/?LinkId=255141";
+        
+        /// <summary>
+        /// Go to web page 'http://localhost:59145/'
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl1 = "http://localhost:59145/";
+        
+        /// <summary>
+        /// Type 'codedUItest2' in 'Title' text box
+        /// </summary>
+        public string UITitleEditText = "codedUItest2";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'CodedUiDeleteGame'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class CodedUiDeleteGameParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://localhost:59145/' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://localhost:59145/";
+        
+        /// <summary>
+        /// Type 'GameToDelete' in 'Title' text box
+        /// </summary>
+        public string UITitleEditText = "GameToDelete";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'CodedUiUpdeteGame'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class CodedUiUpdeteGameParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://localhost:59145/' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://localhost:59145/";
+        
+        /// <summary>
+        /// Type 'GameToUpdate' in 'Title' text box
+        /// </summary>
+        public string UITitleEditText = "GameToUpdate";
+        
+        /// <summary>
+        /// Select 'codeduitest' in 'Genre' combo box
+        /// </summary>
+        public string UIGenreComboBoxSelectedItem = "codeduitest";
+        
+        /// <summary>
+        /// Type 'GameAfterUpdate' in 'Title' text box
+        /// </summary>
+        public string UITitleEditText1 = "GameAfterUpdate";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'CodedUiDeleteGenre'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class CodedUiDeleteGenreParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Go to web page 'http://localhost:59145/' using new browser instance
+        /// </summary>
+        public string UIMSNPolskaOutlookSkypWindowUrl = "http://localhost:59145/";
+        
+        /// <summary>
+        /// Type 'GenreToDelete' in 'Genre Name' text box
+        /// </summary>
+        public string UIGenreNameEditText = "GenreToDelete";
+        #endregion
+    }
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIMSNPolskaOutlookSkypWindow : BrowserWindow
     {
@@ -1357,6 +1755,12 @@ namespace CodedUITests
             this.WindowTitles.Add("Poczta inf.ug.edu.pl - Logowanie");
             this.WindowTitles.Add("Witamy na Facebooku. Zaloguj się, zarejestruj się lub dowiedz się więcej");
             this.WindowTitles.Add("XD - Bing");
+            this.WindowTitles.Add("Home Page - GamesStudios");
+            this.WindowTitles.Add("Index - GamesStudios");
+            this.WindowTitles.Add("Create - GamesStudios");
+            this.WindowTitles.Add("Delete - GamesStudios");
+            this.WindowTitles.Add("http://localhost:59145/");
+            this.WindowTitles.Add("Edit - GamesStudios");
             #endregion
         }
         
@@ -1461,6 +1865,102 @@ namespace CodedUITests
                 return this.mUIXDBingDocument;
             }
         }
+        
+        public UIHomePageGamesStudiosDocument UIHomePageGamesStudiosDocument
+        {
+            get
+            {
+                if ((this.mUIHomePageGamesStudiosDocument == null))
+                {
+                    this.mUIHomePageGamesStudiosDocument = new UIHomePageGamesStudiosDocument(this);
+                }
+                return this.mUIHomePageGamesStudiosDocument;
+            }
+        }
+        
+        public UIIndexGamesStudiosDocument UIIndexGamesStudiosDocument
+        {
+            get
+            {
+                if ((this.mUIIndexGamesStudiosDocument == null))
+                {
+                    this.mUIIndexGamesStudiosDocument = new UIIndexGamesStudiosDocument(this);
+                }
+                return this.mUIIndexGamesStudiosDocument;
+            }
+        }
+        
+        public UICreateGamesStudiosDocument UICreateGamesStudiosDocument
+        {
+            get
+            {
+                if ((this.mUICreateGamesStudiosDocument == null))
+                {
+                    this.mUICreateGamesStudiosDocument = new UICreateGamesStudiosDocument(this);
+                }
+                return this.mUICreateGamesStudiosDocument;
+            }
+        }
+        
+        public UIIndexGamesStudiosDocument1 UIIndexGamesStudiosDocument1
+        {
+            get
+            {
+                if ((this.mUIIndexGamesStudiosDocument1 == null))
+                {
+                    this.mUIIndexGamesStudiosDocument1 = new UIIndexGamesStudiosDocument1(this);
+                }
+                return this.mUIIndexGamesStudiosDocument1;
+            }
+        }
+        
+        public UICreateGamesStudiosDocument1 UICreateGamesStudiosDocument1
+        {
+            get
+            {
+                if ((this.mUICreateGamesStudiosDocument1 == null))
+                {
+                    this.mUICreateGamesStudiosDocument1 = new UICreateGamesStudiosDocument1(this);
+                }
+                return this.mUICreateGamesStudiosDocument1;
+            }
+        }
+        
+        public UIDeleteGamesStudiosDocument UIDeleteGamesStudiosDocument
+        {
+            get
+            {
+                if ((this.mUIDeleteGamesStudiosDocument == null))
+                {
+                    this.mUIDeleteGamesStudiosDocument = new UIDeleteGamesStudiosDocument(this);
+                }
+                return this.mUIDeleteGamesStudiosDocument;
+            }
+        }
+        
+        public UIEditGamesStudiosDocument UIEditGamesStudiosDocument
+        {
+            get
+            {
+                if ((this.mUIEditGamesStudiosDocument == null))
+                {
+                    this.mUIEditGamesStudiosDocument = new UIEditGamesStudiosDocument(this);
+                }
+                return this.mUIEditGamesStudiosDocument;
+            }
+        }
+        
+        public UIDeleteGamesStudiosDocument1 UIDeleteGamesStudiosDocument1
+        {
+            get
+            {
+                if ((this.mUIDeleteGamesStudiosDocument1 == null))
+                {
+                    this.mUIDeleteGamesStudiosDocument1 = new UIDeleteGamesStudiosDocument1(this);
+                }
+                return this.mUIDeleteGamesStudiosDocument1;
+            }
+        }
         #endregion
         
         #region Fields
@@ -1479,6 +1979,22 @@ namespace CodedUITests
         private UIWitamynaFacebookuZalDocument mUIWitamynaFacebookuZalDocument;
         
         private UIXDBingDocument mUIXDBingDocument;
+        
+        private UIHomePageGamesStudiosDocument mUIHomePageGamesStudiosDocument;
+        
+        private UIIndexGamesStudiosDocument mUIIndexGamesStudiosDocument;
+        
+        private UICreateGamesStudiosDocument mUICreateGamesStudiosDocument;
+        
+        private UIIndexGamesStudiosDocument1 mUIIndexGamesStudiosDocument1;
+        
+        private UICreateGamesStudiosDocument1 mUICreateGamesStudiosDocument1;
+        
+        private UIDeleteGamesStudiosDocument mUIDeleteGamesStudiosDocument;
+        
+        private UIEditGamesStudiosDocument mUIEditGamesStudiosDocument;
+        
+        private UIDeleteGamesStudiosDocument1 mUIDeleteGamesStudiosDocument1;
         #endregion
     }
     
@@ -1785,12 +2301,70 @@ namespace CodedUITests
                 return this.mUIOfficeHyperlink;
             }
         }
+        
+        public HtmlHyperlink UIOutlookcomHyperlink
+        {
+            get
+            {
+                if ((this.mUIOutlookcomHyperlink == null))
+                {
+                    this.mUIOutlookcomHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIOutlookcomHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIOutlookcomHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIOutlookcomHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = "_blank";
+                    this.mUIOutlookcomHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Outlook.com";
+                    this.mUIOutlookcomHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/";
+                    this.mUIOutlookcomHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIOutlookcomHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://outlook.com/";
+                    this.mUIOutlookcomHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIOutlookcomHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"http://outlook.com/\" target=\"_blan";
+                    this.mUIOutlookcomHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "1";
+                    this.mUIOutlookcomHyperlink.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUIOutlookcomHyperlink;
+            }
+        }
+        
+        public HtmlHyperlink UISklepHyperlink
+        {
+            get
+            {
+                if ((this.mUISklepHyperlink == null))
+                {
+                    this.mUISklepHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUISklepHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUISklepHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUISklepHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = "_blank";
+                    this.mUISklepHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Sklep";
+                    this.mUISklepHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/click";
+                    this.mUISklepHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUISklepHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://clk.tradedoubler.com/click?p=270365&a=2811327&g=0&epi=Prime_PLPL_HP_MEStor" +
+                        "eL1&url=https://www.microsoftstore.com/store/mseea1/pl_PL/home?icid=MSN_storeTIL" +
+                        "E";
+                    this.mUISklepHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUISklepHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"http://clk.tradedoubler.com/click?";
+                    this.mUISklepHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "2";
+                    this.mUISklepHyperlink.WindowTitles.Add("MSN Polska - Outlook, Skype, Hotmail, Messenger, Microsoft Office Online i OneDri" +
+                            "ve");
+                    #endregion
+                }
+                return this.mUISklepHyperlink;
+            }
+        }
         #endregion
         
         #region Fields
         private HtmlHyperlink mUIFacebookHyperlink;
         
         private HtmlHyperlink mUIOfficeHyperlink;
+        
+        private HtmlHyperlink mUIOutlookcomHyperlink;
+        
+        private HtmlHyperlink mUISklepHyperlink;
         #endregion
     }
     
@@ -2229,6 +2803,656 @@ namespace CodedUITests
     }
     
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIHomePageGamesStudiosDocument : HtmlDocument
+    {
+        
+        public UIHomePageGamesStudiosDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Home Page - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/";
+            this.WindowTitles.Add("Home Page - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UIGenresDatabaseHyperlink
+        {
+            get
+            {
+                if ((this.mUIGenresDatabaseHyperlink == null))
+                {
+                    this.mUIGenresDatabaseHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Genre\'s Database";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Genre";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Genre";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Genre\"";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "4";
+                    this.mUIGenresDatabaseHyperlink.WindowTitles.Add("Home Page - GamesStudios");
+                    #endregion
+                }
+                return this.mUIGenresDatabaseHyperlink;
+            }
+        }
+        
+        public HtmlHyperlink UIGamesDatabaseHyperlink
+        {
+            get
+            {
+                if ((this.mUIGamesDatabaseHyperlink == null))
+                {
+                    this.mUIGamesDatabaseHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIGamesDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIGamesDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIGamesDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIGamesDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Game\'s Database";
+                    this.mUIGamesDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Game";
+                    this.mUIGamesDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIGamesDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Game";
+                    this.mUIGamesDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIGamesDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Game\"";
+                    this.mUIGamesDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "5";
+                    this.mUIGamesDatabaseHyperlink.WindowTitles.Add("Home Page - GamesStudios");
+                    #endregion
+                }
+                return this.mUIGamesDatabaseHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUIGenresDatabaseHyperlink;
+        
+        private HtmlHyperlink mUIGamesDatabaseHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIIndexGamesStudiosDocument : HtmlDocument
+    {
+        
+        public UIIndexGamesStudiosDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Index - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Genre";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Genre";
+            this.WindowTitles.Add("Index - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UICreateNewHyperlink
+        {
+            get
+            {
+                if ((this.mUICreateNewHyperlink == null))
+                {
+                    this.mUICreateNewHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Create New";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Genre/Create";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Genre/Create";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Genre/Create\"";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "6";
+                    this.mUICreateNewHyperlink.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUICreateNewHyperlink;
+            }
+        }
+        
+        public HtmlDiv UIIndexCreateNewGenreNPane
+        {
+            get
+            {
+                if ((this.mUIIndexCreateNewGenreNPane == null))
+                {
+                    this.mUIIndexCreateNewGenreNPane = new HtmlDiv(this);
+                    #region Search Criteria
+                    this.mUIIndexCreateNewGenreNPane.SearchProperties[HtmlDiv.PropertyNames.Id] = null;
+                    this.mUIIndexCreateNewGenreNPane.SearchProperties[HtmlDiv.PropertyNames.Name] = null;
+                    this.mUIIndexCreateNewGenreNPane.FilterProperties[HtmlDiv.PropertyNames.InnerText] = "Index\r\n\r\nCreate New \r\n\r\n\r\n\r\nGenre Name \r";
+                    this.mUIIndexCreateNewGenreNPane.FilterProperties[HtmlDiv.PropertyNames.Title] = null;
+                    this.mUIIndexCreateNewGenreNPane.FilterProperties[HtmlDiv.PropertyNames.Class] = "container body-content";
+                    this.mUIIndexCreateNewGenreNPane.FilterProperties[HtmlDiv.PropertyNames.ControlDefinition] = "class=\"container body-content\"";
+                    this.mUIIndexCreateNewGenreNPane.FilterProperties[HtmlDiv.PropertyNames.TagInstance] = "4";
+                    this.mUIIndexCreateNewGenreNPane.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUIIndexCreateNewGenreNPane;
+            }
+        }
+        
+        public HtmlHyperlink UIDeleteHyperlink
+        {
+            get
+            {
+                if ((this.mUIDeleteHyperlink == null))
+                {
+                    this.mUIDeleteHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Delete";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Genre/Delete/5";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Genre/Delete/5";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Genre/Delete/5\"";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "21";
+                    this.mUIDeleteHyperlink.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUIDeleteHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUICreateNewHyperlink;
+        
+        private HtmlDiv mUIIndexCreateNewGenreNPane;
+        
+        private HtmlHyperlink mUIDeleteHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UICreateGamesStudiosDocument : HtmlDocument
+    {
+        
+        public UICreateGamesStudiosDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Create - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Genre/Create";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Genre/Create";
+            this.WindowTitles.Add("Create - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlEdit UIGenreNameEdit
+        {
+            get
+            {
+                if ((this.mUIGenreNameEdit == null))
+                {
+                    this.mUIGenreNameEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUIGenreNameEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "Name";
+                    this.mUIGenreNameEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "Name";
+                    this.mUIGenreNameEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = "Genre Name";
+                    this.mUIGenreNameEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUIGenreNameEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUIGenreNameEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control text-box single-line";
+                    this.mUIGenreNameEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Name\" class=\"form-control text-box";
+                    this.mUIGenreNameEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "2";
+                    this.mUIGenreNameEdit.WindowTitles.Add("Create - GamesStudios");
+                    #endregion
+                }
+                return this.mUIGenreNameEdit;
+            }
+        }
+        
+        public HtmlInputButton UICreateButton
+        {
+            get
+            {
+                if ((this.mUICreateButton == null))
+                {
+                    this.mUICreateButton = new HtmlInputButton(this);
+                    #region Search Criteria
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.Id] = null;
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Create";
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn btn-default";
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn btn-default\" type=\"submit\" va";
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "3";
+                    this.mUICreateButton.WindowTitles.Add("Create - GamesStudios");
+                    #endregion
+                }
+                return this.mUICreateButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlEdit mUIGenreNameEdit;
+        
+        private HtmlInputButton mUICreateButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIIndexGamesStudiosDocument1 : HtmlDocument
+    {
+        
+        public UIIndexGamesStudiosDocument1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Index - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Game";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Game";
+            this.WindowTitles.Add("Index - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlHyperlink UICreateNewHyperlink
+        {
+            get
+            {
+                if ((this.mUICreateNewHyperlink == null))
+                {
+                    this.mUICreateNewHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUICreateNewHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Create New";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Game/Create";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Game/Create";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Game/Create\"";
+                    this.mUICreateNewHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "6";
+                    this.mUICreateNewHyperlink.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUICreateNewHyperlink;
+            }
+        }
+        
+        public HtmlHyperlink UIDeleteHyperlink
+        {
+            get
+            {
+                if ((this.mUIDeleteHyperlink == null))
+                {
+                    this.mUIDeleteHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIDeleteHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Delete";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Game/Delete/24";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Game/Delete/24";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Game/Delete/24\"";
+                    this.mUIDeleteHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "78";
+                    this.mUIDeleteHyperlink.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUIDeleteHyperlink;
+            }
+        }
+        
+        public HtmlHyperlink UIEditHyperlink
+        {
+            get
+            {
+                if ((this.mUIEditHyperlink == null))
+                {
+                    this.mUIEditHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIEditHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIEditHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIEditHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIEditHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Edit";
+                    this.mUIEditHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Game/Edit/26";
+                    this.mUIEditHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIEditHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Game/Edit/26";
+                    this.mUIEditHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIEditHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Game/Edit/26\"";
+                    this.mUIEditHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "77";
+                    this.mUIEditHyperlink.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUIEditHyperlink;
+            }
+        }
+        
+        public HtmlHyperlink UIGenresDatabaseHyperlink
+        {
+            get
+            {
+                if ((this.mUIGenresDatabaseHyperlink == null))
+                {
+                    this.mUIGenresDatabaseHyperlink = new HtmlHyperlink(this);
+                    #region Search Criteria
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Id] = null;
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Name] = null;
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.Target] = null;
+                    this.mUIGenresDatabaseHyperlink.SearchProperties[HtmlHyperlink.PropertyNames.InnerText] = "Genre\'s Database";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.AbsolutePath] = "/Genre";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Title] = null;
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:59145/Genre";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = null;
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "href=\"/Genre\"";
+                    this.mUIGenresDatabaseHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "4";
+                    this.mUIGenresDatabaseHyperlink.WindowTitles.Add("Index - GamesStudios");
+                    #endregion
+                }
+                return this.mUIGenresDatabaseHyperlink;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlHyperlink mUICreateNewHyperlink;
+        
+        private HtmlHyperlink mUIDeleteHyperlink;
+        
+        private HtmlHyperlink mUIEditHyperlink;
+        
+        private HtmlHyperlink mUIGenresDatabaseHyperlink;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UICreateGamesStudiosDocument1 : HtmlDocument
+    {
+        
+        public UICreateGamesStudiosDocument1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Create - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Game/Create";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Game/Create";
+            this.WindowTitles.Add("Create - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlEdit UITitleEdit
+        {
+            get
+            {
+                if ((this.mUITitleEdit == null))
+                {
+                    this.mUITitleEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUITitleEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "Name";
+                    this.mUITitleEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "Name";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = "Title";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control text-box single-line";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Name\" class=\"form-control text-box";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "2";
+                    this.mUITitleEdit.WindowTitles.Add("Create - GamesStudios");
+                    #endregion
+                }
+                return this.mUITitleEdit;
+            }
+        }
+        
+        public HtmlInputButton UICreateButton
+        {
+            get
+            {
+                if ((this.mUICreateButton == null))
+                {
+                    this.mUICreateButton = new HtmlInputButton(this);
+                    #region Search Criteria
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.Id] = null;
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Create";
+                    this.mUICreateButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn btn-default";
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn btn-default\" type=\"submit\" va";
+                    this.mUICreateButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "3";
+                    this.mUICreateButton.WindowTitles.Add("Create - GamesStudios");
+                    #endregion
+                }
+                return this.mUICreateButton;
+            }
+        }
+        
+        public HtmlComboBox UIGenreComboBox
+        {
+            get
+            {
+                if ((this.mUIGenreComboBox == null))
+                {
+                    this.mUIGenreComboBox = new HtmlComboBox(this);
+                    #region Search Criteria
+                    this.mUIGenreComboBox.SearchProperties[HtmlComboBox.PropertyNames.Id] = "GenreID";
+                    this.mUIGenreComboBox.SearchProperties[HtmlComboBox.PropertyNames.Name] = "GenreID";
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.LabeledBy] = "Genre";
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.Size] = "0";
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.Title] = null;
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.ItemCount] = "4";
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.Class] = "form-control";
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.ControlDefinition] = "name=\"GenreID\" class=\"form-control\" id=\"";
+                    this.mUIGenreComboBox.FilterProperties[HtmlComboBox.PropertyNames.TagInstance] = "1";
+                    this.mUIGenreComboBox.WindowTitles.Add("Create - GamesStudios");
+                    #endregion
+                }
+                return this.mUIGenreComboBox;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlEdit mUITitleEdit;
+        
+        private HtmlInputButton mUICreateButton;
+        
+        private HtmlComboBox mUIGenreComboBox;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIDeleteGamesStudiosDocument : HtmlDocument
+    {
+        
+        public UIDeleteGamesStudiosDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Delete - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Game/Delete/24";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Game/Delete/24";
+            this.WindowTitles.Add("Delete - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlInputButton UIDeleteButton
+        {
+            get
+            {
+                if ((this.mUIDeleteButton == null))
+                {
+                    this.mUIDeleteButton = new HtmlInputButton(this);
+                    #region Search Criteria
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.Id] = null;
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Delete";
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn btn-default";
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn btn-default\" type=\"submit\" va";
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "2";
+                    this.mUIDeleteButton.WindowTitles.Add("Delete - GamesStudios");
+                    #endregion
+                }
+                return this.mUIDeleteButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlInputButton mUIDeleteButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIEditGamesStudiosDocument : HtmlDocument
+    {
+        
+        public UIEditGamesStudiosDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Edit - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Game/Edit/26";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Game/Edit/26";
+            this.WindowTitles.Add("Edit - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlEdit UITitleEdit
+        {
+            get
+            {
+                if ((this.mUITitleEdit == null))
+                {
+                    this.mUITitleEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUITitleEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "Name";
+                    this.mUITitleEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "Name";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = "Title";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control text-box single-line";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Name\" class=\"form-control text-box";
+                    this.mUITitleEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "3";
+                    this.mUITitleEdit.WindowTitles.Add("Edit - GamesStudios");
+                    #endregion
+                }
+                return this.mUITitleEdit;
+            }
+        }
+        
+        public HtmlInputButton UISaveButton
+        {
+            get
+            {
+                if ((this.mUISaveButton == null))
+                {
+                    this.mUISaveButton = new HtmlInputButton(this);
+                    #region Search Criteria
+                    this.mUISaveButton.SearchProperties[HtmlButton.PropertyNames.Id] = null;
+                    this.mUISaveButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
+                    this.mUISaveButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Save";
+                    this.mUISaveButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
+                    this.mUISaveButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
+                    this.mUISaveButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn btn-default";
+                    this.mUISaveButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn btn-default\" type=\"submit\" va";
+                    this.mUISaveButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "4";
+                    this.mUISaveButton.WindowTitles.Add("Edit - GamesStudios");
+                    #endregion
+                }
+                return this.mUISaveButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlEdit mUITitleEdit;
+        
+        private HtmlInputButton mUISaveButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIDeleteGamesStudiosDocument1 : HtmlDocument
+    {
+        
+        public UIDeleteGamesStudiosDocument1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
+            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
+            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
+            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Delete - GamesStudios";
+            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Genre/Delete/5";
+            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:59145/Genre/Delete/5";
+            this.WindowTitles.Add("Delete - GamesStudios");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlInputButton UIDeleteButton
+        {
+            get
+            {
+                if ((this.mUIDeleteButton == null))
+                {
+                    this.mUIDeleteButton = new HtmlInputButton(this);
+                    #region Search Criteria
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.Id] = null;
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Delete";
+                    this.mUIDeleteButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn btn-default";
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn btn-default\" type=\"submit\" va";
+                    this.mUIDeleteButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "2";
+                    this.mUIDeleteButton.WindowTitles.Add("Delete - GamesStudios");
+                    #endregion
+                }
+                return this.mUIDeleteButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlInputButton mUIDeleteButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIAllMyASPNETApplicatiWindow : BrowserWindow
     {
         
@@ -2636,13 +3860,13 @@ namespace CodedUITests
             }
         }
         
-        public UICreateGamesStudiosDocument UICreateGamesStudiosDocument
+        public UICreateGamesStudiosDocument2 UICreateGamesStudiosDocument
         {
             get
             {
                 if ((this.mUICreateGamesStudiosDocument == null))
                 {
-                    this.mUICreateGamesStudiosDocument = new UICreateGamesStudiosDocument(this);
+                    this.mUICreateGamesStudiosDocument = new UICreateGamesStudiosDocument2(this);
                 }
                 return this.mUICreateGamesStudiosDocument;
             }
@@ -2696,7 +3920,7 @@ namespace CodedUITests
         
         private UICreateNewHyperlink mUICreateNewHyperlink;
         
-        private UICreateGamesStudiosDocument mUICreateGamesStudiosDocument;
+        private UICreateGamesStudiosDocument2 mUICreateGamesStudiosDocument;
         
         private UIHomePageGamesStudiosMoziApplication mUIHomePageGamesStudiosMoziApplication;
         
@@ -2852,10 +4076,10 @@ namespace CodedUITests
     }
     
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class UICreateGamesStudiosDocument : WinControl
+    public class UICreateGamesStudiosDocument2 : WinControl
     {
         
-        public UICreateGamesStudiosDocument(UITestControl searchLimitContainer) : 
+        public UICreateGamesStudiosDocument2(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria

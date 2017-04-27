@@ -13,49 +13,45 @@ using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
 namespace CodedUITests
 {
     [CodedUITest]
-    public class CodedUITest1
+    public class GamesStudiosCodedUI
     {
-        public CodedUITest1()
+
+
+        [TestMethod]
+        public void CodedUiUpdeteGame()
         {
+
+            this.UIMap.CodedUiUpdeteGame();
+
+        }
+        [TestMethod]
+        public void CodedUiDeleteGenre()
+        {
+
+            this.UIMap.CodedUiDeleteGenre();
+
 
         }
 
         [TestMethod]
-        public void CodedUITestMethod1()
+        public void CodedUiDeleteGame()
         {
 
-            // this.UIMap.infugedu();
-            //  this.UIMap.Edgetest();
-            // this.UIMap.ExplorerTest();
+            this.UIMap.CodedUiDeleteGame();
+        }
 
-            this.UIMap.ASDXD();
+        [TestMethod]
+        public void CodedUiAddNewGame()
+        {
 
-            // this.UIMap.XD();
+            this.UIMap.CodedUIAddNewGame();
 
-            //this.UIMap.OpenFirefox();
-            // this.UIMap.OpenApp();
-            //this.UIMap.OpenFirefoxandGotoPage();
-            // this.UIMap.TEST1();
+        }
 
-            //  this.UIMap.OpenFirefoxandGotoMainPage();
-            //  this.UIMap.AddNewGame();
-
-            // this.UIMap.kalk2();
-            // this.UIMap.mozilla();
-
-            // this.UIMap.kalktest();
-
-            // this.UIMap.GoToGamesAndCreateNew();
-
-            /*   
-               this.UIMap.OpenInternetExplorer();
-               this.UIMap.OpenApp();
-               this.UIMap.ListaOsobClick();
-               this.UIMap.SprAdresClick();
-               this.UIMap.ClickEditAdres();
-               this.UIMap.EditMiastoPerson();
-               this.UIMap.SaveAdresPersonClick();
-             */
+        [TestMethod]
+        public void CodedUiAddNewGenre()
+        {
+            this.UIMap.AddNewGenre();
         }
 
         #region Additional test attributes
