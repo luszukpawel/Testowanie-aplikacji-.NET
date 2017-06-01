@@ -396,31 +396,19 @@ namespace CodedUITests
         public void TEST1()
         {
             #region Variable Declarations
-            WinComboBox uIItemComboBox = this.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox;
-            WinEdit uIPocztaEdit = this.UIStronastartowaprograWindow.UIPocztaHyperlink.UIPocztaEdit;
-            WinButton uIWsteczButton = this.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIWsteczButton;
-            WinEdit uIPlanzajęćEdit = this.UIStronastartowaprograWindow.UIPlanzajęćHyperlink.UIPlanzajęćEdit;
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink;
+            HtmlEdit uINameEdit = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UINameEdit;
+            HtmlInputButton uICreateButton = this.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UICreateButton;
             #endregion
 
-            // Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
-            ApplicationUnderTest firefoxApplication = ApplicationUnderTest.Launch(this.TEST1Params.ExePath, this.TEST1Params.AlternateExePath);
+            // Click 'Create New' link
+            Mouse.Click(uICreateNewHyperlink, new Point(26, 4));
 
-            // Element not available
+            // Type 'xd' in 'Name' text box
+            uINameEdit.Text = this.TEST1Params.UINameEditText;
 
-            // Select 'https://inf.ug.edu.pl/aktualnosci' in combo box
-            uIItemComboBox.EditableItem = this.TEST1Params.UIItemComboBoxEditableItem;
-
-            // Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
-            ApplicationUnderTest uIStronastartowaprograWindow = ApplicationUnderTest.Launch(this.TEST1Params.UIStronastartowaprograWindowExePath, this.TEST1Params.UIStronastartowaprograWindowAlternateExePath);
-
-            // Click 'Poczta' text box
-            Mouse.Click(uIPocztaEdit, new Point(22, 7));
-
-            // Click 'Wstecz' button
-            Mouse.Click(uIWsteczButton, new Point(21, 16));
-
-            // Click 'Plan zajęć' text box
-            Mouse.Click(uIPlanzajęćEdit, new Point(40, 6));
+            // Click 'Create' button
+            Mouse.Click(uICreateButton, new Point(32, 20));
         }
         
         /// <summary>
@@ -796,6 +784,19 @@ namespace CodedUITests
             Mouse.Click(uIDeleteButton, new Point(15, 12));
         }
         
+        /// <summary>
+        /// AssertMethod1 - Use 'AssertMethod1ExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod1()
+        {
+            #region Variable Declarations
+            HtmlHyperlink uICreateNewHyperlink = this.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink;
+            #endregion
+
+            // Verify that the 'InnerText' property of 'Create New' link equals 'Create New'
+            Assert.AreEqual(this.AssertMethod1ExpectedValues.UICreateNewHyperlinkInnerText, uICreateNewHyperlink.InnerText);
+        }
+        
         #region Properties
         public virtual OpenInternetExplorerParams OpenInternetExplorerParams
         {
@@ -1037,6 +1038,18 @@ namespace CodedUITests
             }
         }
         
+        public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod1ExpectedValues == null))
+                {
+                    this.mAssertMethod1ExpectedValues = new AssertMethod1ExpectedValues();
+                }
+                return this.mAssertMethod1ExpectedValues;
+            }
+        }
+        
         public UIMSNPolskaOutlookSkypWindow UIMSNPolskaOutlookSkypWindow
         {
             get
@@ -1210,6 +1223,8 @@ namespace CodedUITests
         private CodedUiUpdeteGameParams mCodedUiUpdeteGameParams;
         
         private CodedUiDeleteGenreParams mCodedUiDeleteGenreParams;
+        
+        private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;
         
         private UIMSNPolskaOutlookSkypWindow mUIMSNPolskaOutlookSkypWindow;
         
@@ -1486,29 +1501,9 @@ namespace CodedUITests
         
         #region Fields
         /// <summary>
-        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
+        /// Type 'xd' in 'Name' text box
         /// </summary>
-        public string ExePath = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
-        
-        /// <summary>
-        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
-        /// </summary>
-        public string AlternateExePath = "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe";
-        
-        /// <summary>
-        /// Select 'https://inf.ug.edu.pl/aktualnosci' in combo box
-        /// </summary>
-        public string UIItemComboBoxEditableItem = "https://inf.ug.edu.pl/aktualnosci";
-        
-        /// <summary>
-        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
-        /// </summary>
-        public string UIStronastartowaprograWindowExePath = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
-        
-        /// <summary>
-        /// Launch '%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe'
-        /// </summary>
-        public string UIStronastartowaprograWindowAlternateExePath = "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe";
+        public string UINameEditText = "xd";
         #endregion
     }
     
@@ -1734,6 +1729,21 @@ namespace CodedUITests
         /// Type 'GenreToDelete' in 'Genre Name' text box
         /// </summary>
         public string UIGenreNameEditText = "GenreToDelete";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod1'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod1ExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'InnerText' property of 'Create New' link equals 'Create New'
+        /// </summary>
+        public string UICreateNewHyperlinkInnerText = "Create New";
         #endregion
     }
     
@@ -3272,6 +3282,29 @@ namespace CodedUITests
                 return this.mUIGenreComboBox;
             }
         }
+        
+        public HtmlEdit UINameEdit
+        {
+            get
+            {
+                if ((this.mUINameEdit == null))
+                {
+                    this.mUINameEdit = new HtmlEdit(this);
+                    #region Search Criteria
+                    this.mUINameEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "xd";
+                    this.mUINameEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "Name";
+                    this.mUINameEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = null;
+                    this.mUINameEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
+                    this.mUINameEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
+                    this.mUINameEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control text-box single-line";
+                    this.mUINameEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Name\" class=\"form-control text-box";
+                    this.mUINameEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "2";
+                    this.mUINameEdit.WindowTitles.Add("Create - GamesStudios");
+                    #endregion
+                }
+                return this.mUINameEdit;
+            }
+        }
         #endregion
         
         #region Fields
@@ -3280,6 +3313,8 @@ namespace CodedUITests
         private HtmlInputButton mUICreateButton;
         
         private HtmlComboBox mUIGenreComboBox;
+        
+        private HtmlEdit mUINameEdit;
         #endregion
     }
     

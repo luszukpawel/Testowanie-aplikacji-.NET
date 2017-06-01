@@ -45,6 +45,7 @@ namespace CodedUITests
         {
 
             this.UIMap.CodedUIAddNewGame();
+            this.UIMap.AssertMethod1();
 
         }
 

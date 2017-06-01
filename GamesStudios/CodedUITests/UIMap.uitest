@@ -640,50 +640,25 @@
       <WorkItemId>0</WorkItemId>
       <MarkerRegionType>Action</MarkerRegionType>
     </TestStepMarkerAction>
-    <LaunchApplicationAction>
+    <MouseAction UIObjectName="UIMap.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink">
       <ParameterName />
-      <FileName>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</FileName>
-      <AlternateFileName>%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe</AlternateFileName>
-    </LaunchApplicationAction>
-    <ErrorAction>
-      <ContinueOnError>True</ContinueOnError>
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="26" Y="4" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UINameEdit">
       <ParameterName />
-      <Message>Element not available</Message>
-    </ErrorAction>
-    <SetValueAction UIObjectName="UIMap.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIItemComboBox">
-      <ParameterName />
-      <Value Encoded="false">https://inf.ug.edu.pl/aktualnosci</Value>
+      <Value Encoded="false">xd</Value>
       <Type>String</Type>
-      <PreferEdit>True</PreferEdit>
     </SetValueAction>
-    <LaunchApplicationAction UIObjectName="UIMap.UIStronastartowaprograWindow">
-      <ParameterName />
-      <FileName>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</FileName>
-      <AlternateFileName>%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe</AlternateFileName>
-    </LaunchApplicationAction>
-    <MouseAction UIObjectName="UIMap.UIStronastartowaprograWindow.UIPocztaHyperlink.UIPocztaEdit">
+    <MouseAction UIObjectName="UIMap.UIMSNPolskaOutlookSkypWindow.UICreateGamesStudiosDocument1.UICreateButton">
       <ParameterName />
       <ModifierKeys>None</ModifierKeys>
       <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="22" Y="7" />
-      <WheelDirection>0</WheelDirection>
-      <ActionType>Click</ActionType>
-      <MouseButton>Left</MouseButton>
-    </MouseAction>
-    <MouseAction UIObjectName="UIMap.UIStronastartowaprograWindow.UIPaseknarzędzinawigacToolBar.UIWsteczButton">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="21" Y="16" />
-      <WheelDirection>0</WheelDirection>
-      <ActionType>Click</ActionType>
-      <MouseButton>Left</MouseButton>
-    </MouseAction>
-    <MouseAction UIObjectName="UIMap.UIStronastartowaprograWindow.UIPlanzajęćHyperlink.UIPlanzajęćEdit">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="40" Y="6" />
+      <Location X="32" Y="20" />
       <WheelDirection>0</WheelDirection>
       <ActionType>Click</ActionType>
       <MouseButton>Left</MouseButton>
@@ -1346,6 +1321,23 @@
       <Disabled>false</Disabled>
       <WorkItemId>0</WorkItemId>
       <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <AssertAction UIObjectName="UIMap.UIMSNPolskaOutlookSkypWindow.UIIndexGamesStudiosDocument1.UICreateNewHyperlink">
+      <ParameterName />
+      <PropertyName>InnerText</PropertyName>
+      <ExpectedValue>Create New</ExpectedValue>
+      <MessageOnValidationFailure />
+      <Type>String</Type>
+      <PropertyCondition>AreEqual</PropertyCondition>
+    </AssertAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="AssertMethod1">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Assertion</MarkerRegionType>
     </TestStepMarkerAction>
   </ExecuteActions>
   <CleanupActions />
@@ -2552,6 +2544,30 @@ Genre Name </PropertyCondition>
                       <PropertyCondition Name="Class">form-control</PropertyCondition>
                       <PropertyCondition Name="ControlDefinition">name="GenreID" class="form-control" id="</PropertyCondition>
                       <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UINameEdit" FriendlyName="Name" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - GamesStudios</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">xd</PropertyCondition>
+                      <PropertyCondition Name="Name">Name</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Name" class="form-control text-box</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
                     </FilterCondition>
                   </AndCondition>
                   <SupportLevel>0</SupportLevel>
